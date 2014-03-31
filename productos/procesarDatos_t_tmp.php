@@ -44,6 +44,7 @@ if (isset($_POST['accion'])) {
 		exit();			
 	}
 	elseif ($_GET['modo'] == "MODIFICAR") { 
+	// he incluido el campo adjunto
 	   $idProveedor = $_POST['id_proveedor'];
 	  // echo  $idProveedor; exit();
 		$codProducto= $_POST["id_fabrica"]; // de momento ponemos el mismo que el id de fabrica
@@ -78,6 +79,7 @@ if (isset($_POST['accion'])) {
 		if (!$resultat)  die('Error: ' . mysql_error());
     	mysql_close($enllac);
     	//echo "<br>Producto MODIFICADO... <BR> Los cambios tendrán efecto una vez aplicados los descuentos de los precios antiguos<br>"; 
+		//he modificado header
 		$texto="<br>Producto $codProducto MODIFICADO <BR> Los cambios tendrán efecto una vez aplicados los descuentos de los precios antiguos<br>";
 		header("Location:../proveedores/menu_prov.php?go=3&unif=$miNIF&idProveedor=$idProveedor&texto=$texto");
 		/*
