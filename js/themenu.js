@@ -1,0 +1,73 @@
+var LowBgColor="#FFFFFF"; 
+var HighBgColor=""; 
+var FontLowColor="#00206E"; 
+var FontHighColor="#CC6600"; 
+var BorderColor="#000000"; 
+var BorderWidthMain=0; 
+var BorderWidthSub=0; 
+var BorderBtwnMain=1; 
+var BorderBtwnSub=1; 
+var FontFamily="arial"; 
+var FontSize=70; 
+var FontBold=1; 
+var FontItalic=0; 
+var MenuTextCentered="left"; 
+var MenuCentered="midle"; 
+var MenuVerticalCentered="top"; 
+var ChildOverlap=.8; 
+var ChildVerticalOverlap=1; 
+var StartTop=0; 
+var StartLeft=0; 
+var VerCorrect=0; 
+var HorCorrect=0;
+var LeftPaddng=3; 
+var TopPaddng=2; 
+var FirstLineHorizontal=0;
+var MenuFramesVertical=1; 
+var DissapearDelay=1000; 
+var UnfoldDelay=100; 
+var TakeOverBgColor=1; 
+var FirstLineFrame="menu"; 
+var SecLineFrame="menu"; 
+var DocTargetFrame="contenido"; 
+var TargetLoc="MenuPos"; 
+var MenuWrap=0; 
+var RightToLeft=0; 
+var BottomUp=0; 
+var UnfoldsOnClick=0; 
+var BaseHref=""; 
+var Arrws=[BaseHref+"",5,10,BaseHref+"",10,5,BaseHref+"",5,10,BaseHref+"",10,5];  
+var MenuUsesFrames=1;
+var RememberStatus=0; 
+var PartOfWindow=.8; 
+var BuildOnDemand=0; 
+var MenuSlide=""; 
+var MenuShadow="progid:DXImageTransform.Microsoft.DropShadow(color=#888888, offX=2, offY=2, positive=1)";
+
+var MenuOpacity=""; 
+function BeforeStart(){return} 
+function AfterBuild(){return} 
+function BeforeFirstOpen(){return} 
+function AfterCloseAll(){return} 
+var NoOffFirstLineMenus=6;
+Menu1=new Array("Equipaments","Equipamiento.htm","",0,20, 150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","") 
+Menu2=new Array("Pla d'estudis","#","",8,20, 150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","Visual Identity Program") 
+Menu2_1= new Array("Quadre sinopnic","pla.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Print guidelines for VIP");  
+Menu2_2= new Array("Instruments","estudis.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Web guidelines for VIP");  
+Menu2_3= new Array("Llenguatge Musical","llengua.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP");  
+Menu2_4= new Array("Harmonia","harmonia.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP"); 
+Menu2_5= new Array("Arranjaments","arranjam.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP"); 
+Menu2_6= new Array("Creació e improvisació","improvi.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP"); 
+Menu2_7= new Array("Noves technologies","noves.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP"); 
+Menu2_8= new Array("Conjunts instrumentals","combo.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","Image Gallery for VIP"); 
+Menu3=new Array("Professors","professors/scrollProfes.html","",0,20,150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","Vols coneixer als professors")  
+Menu5=new Array("Forum","http://kalmusik.singularweb.com/kalweb_nueva/Foro/Foros.asp","",0,20,150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","Participa al nostre forum")  
+Menu4=new Array("Informació inscripció","#","",6,20, 150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","al centre") 
+Menu4_1= new Array("Calendari","calendar.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","del trimestre");  
+Menu4_2= new Array("Planing Colectivas","http://kalmusik.singularweb.com/kalweb_nueva/Usuarios/Planing_Colectivas.asp","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","");  
+Menu4_3= new Array("Planing Individuals","http://kalmusik.singularweb.com/kalweb_nueva/Usuarios/SelecIndividuals.asp","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"","");  
+Menu4_4= new Array("Planing Aulas","http://kalmusik.singularweb.com/kalweb_nueva/Usuarios/SelecAulas.asp","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"",""); 
+Menu4_5= new Array("Preus","iPreus.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"",""); 
+Menu4_6= new Array("Documentació","informa.htm","",0,20,150,"#660000","#FE7028","#FE7028","#660000","#FFFF99","#FE7028",-1,-1,-1,"",""); 
+Menu5=new Array("Forum","http://kalmusik.singularweb.com/kalweb_nueva/Foro/Foros.asp","",0,20,150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","Participa al nostre forum") 
+Menu6=new Array("Noticies","http://kalmusik.singularweb.com/kalweb_nueva/ASPNews/ViewNews.asp","",0,20,150,"#CC6600","#660000","#660000","","","",-1,-1,-1,"","Noticies a kal musik")  

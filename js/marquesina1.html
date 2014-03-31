@@ -1,0 +1,41 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+</head>
+
+<body>
+<!--[if IE]>
+
+<IE:Download ID="marqueedata" STYLE="behavior:url(#default#download)" /> 
+<marquee id="externalmarquee" direction=up scrollAmount=4 style="width:200px;height:150px;border:1px solid black;padding:3px" onMouseover="this.scrollAmount=2" onMouseout="this.scrollAmount=4" src="update.htm">
+</marquee>
+
+
+<script language="JavaScript1.2">
+
+/*
+External Data Source Marquee Script (Updated 99/11/02)- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of Use, visit dynamicdrive.com
+*/
+
+function downloaddata(){
+marqueedata.startDownload(externalmarquee.src,displaydata)
+}
+
+function displaydata(data){
+externalmarquee.innerHTML=data
+}
+
+if (document.all)
+window.onload=downloaddata
+
+
+</script>
+
+<![endif]-->
+</body>
+</html>

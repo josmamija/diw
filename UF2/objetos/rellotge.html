@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head><title>Crea objecte cercle</title></head>   
+<body> 
+<script type="text/javascript" >
+	function Rellotge(segons, minuts, hores) {
+	   this.segons = segons;
+		this.minuts=minuts;
+		this.hores = hores;
+		this.cambiarHora=cambio;
+		this.visualizarHora=ver;
+	}
+	function cambio(){
+		var hores = prompt("hora :");	
+		var minuts = prompt("minuts :");	
+		var segons = prompt("segons :");	
+		this.segons = segons;
+		this.minuts=minuts;
+		this.hores = hores;
+		
+	}
+	function ver(){
+	   if(this.hores < 12) {
+		document.write(this.hores +":"+this.minuts + ":"+ this.segons + " a.m");
+		}else{
+			document.write(this.hores - 12 +":"+this.minuts + ":"+ this.segons + " p.m");
+		}
+		document.write("<br>"+ this.hores +":"+this.minuts + ":"+ this.segons);	
+	}
+	var fechaHora = new Date();
+	var segons = fechaHora.getSeconds();
+	var minuts=fechaHora.getMinutes();
+	var hores = fechaHora.getHours();
+	var miHora= new Rellotge(segons,minuts,hores);
+	miHora.visualizarHora();
+	miHora.cambiarHora();
+	document.write("<br>");
+	miHora.visualizarHora();
+</script>   
+</body>   
+</html>  

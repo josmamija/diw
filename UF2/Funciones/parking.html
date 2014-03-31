@@ -1,0 +1,27 @@
+<html><head><title>Parking</title></head>
+<body>
+<script type="text/javascript">
+    function preu(he,hs){
+    	var me = parseInt(he.substr(-2));
+    	var ms = parseInt(hs.substr(-2));
+    	he = parseInt(he.substr(0,2));
+   	hs = parseInt(hs.substr(0,2));
+      var minutos=( (hs*60+ms) - (he*60+ me));
+      //document.write(minutos+"\n ");
+      var horas = Math.floor(minutos/60);
+      //document.write(horas+"\n ");
+      var resto = minutos%60;
+      if(resto ==0) {horas--;}
+      
+      return horas;
+      
+    }
+    var he =prompt("Hora entrada (HH:MM)\n");
+    var hs= prompt("Hora salida (HH:MM)\n");
+    //document.write(he);
+    document.writeln("Tarifa: "+preu(he,hs) + " Euros");
+    
+    
+</script>
+</body>
+</html>

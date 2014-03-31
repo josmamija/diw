@@ -1,0 +1,74 @@
+<html><head><title>Parking</title></head>
+<body>
+<script type="text/javascript">
+    function constIncrease(amount)
+{
+    var ten = 10;
+    //var codeFunc = function () { alert(ten); };
+    var codeFunc = function () { document.write("<br>"+ ten); };
+    
+    ten += amount;
+    return codeFunc;
+}
+ 
+//En otra parte del código...
+var execute = constIncrease(5);
+execute();
+execute();
+execute();
+
+function personalizedGreet(name) {
+ 
+    var hello = "Hello ";
+ 
+    return function () { alert(hello + name); };
+}
+ 
+//Creamos dos closures distintos
+ 
+var greet1 = personalizedGreet("Pedro");
+var greet2 = personalizedGreet("María");
+ 
+greet1();  //Muestra en pantalla: Hello Pedro
+greet2();  //Muestra en pantalla: Hello María
+
+var gExecute1 = null;
+var gExecute2 = null;
+var gExecute3 = null;
+ 
+function createClosure() {
+    var num = 10;
+    gExecute1 = function () { alert(num); };
+ 
+    num++;
+    gExecute2 = function () { alert(num); };
+ 
+    num = "¡¡Toma ya!!!"
+    gExecute3 = function () { alert(num); };
+}
+ 
+function createClosure1() {
+    var num = 10;
+    gExecute1 = function () {  document.write("<br>"+ num); };
+ 
+    num++;
+    gExecute2 = function () {  document.write("<br>"+num); };
+ 
+    num = "¡¡Toma ya!!!";
+    gExecute3 = function () {  document.write("<br>"+ num); };
+} 
+/*
+createClosure();
+gExecute1();
+gExecute2();
+gExecute3();
+*/
+createClosure1 ();
+gExecute1();
+gExecute2();
+gExecute3();
+
+    
+</script>
+</body>
+</html>

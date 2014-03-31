@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<style>
+body {background-color:white;}
+#cuadro1{position:absolute;left:0px;top:300px;width:40px;height:40px;background-image:url("avion.jpg");}* html 
+
+#ralla{position:absolute;left:0px;top:300px;width:800px;height:5px;background-color:#000; background:#000);}* html 
+/*
+#cuadro1{background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="avion.jpg",sizingMethod="crop");}
+*/
+</style>
+<script type="text/javascript"  style="display:none">
+    window.onload=function cuadrosInit(){
+        moveCuadro1();
+    	return true;};
+    var tiro;
+    function moveCuadro1(){
+		var tiro2 = disparo();
+		var increment=3;
+    	var cuadro1=document.getElementById('cuadro1');
+		var posX=0;
+		var alto = cuadro1.offsetHeight * tiro2; 
+		var altura=parseInt(document.getElementById("cuadro1").offsetTop);
+		var posY=alto +altura;
+		if (tiro2 != 0) {
+			document.getElementById("cuadro1").style.top = posY + "px";
+			if(posY<=0){ 
+				clearTimeout(parar);
+				alert("Has salido por arriba");
+				document.getElementById("cuadro1").style.top = 300 + "px";
+				document.getElementById("cuadro1").style.left = 0 + "px";
+			}
+			else if(posY>599 ){
+				clearTimeout(parar);
+				alert("Has salido por debajo");
+				document.getElementById("cuadro1").style.top = 300 + "px";
+				document.getElementById("cuadro1").style.left = 0 + "px";
+			}
+		
+		}
+		else {
+			var tope= parseInt(document.getElementById("cuadro1").style.top);
+			if(tope<300) {
+				document.getElementById("cuadro1").style.top = tope +1 + "px";
+			}
+			else if (tope >300) {
+				document.getElementById("cuadro1").style.top = tope -1 + "px";
+			}
+		}
+    	//if(cuadro1.style.left==null||cuadro1.style.left==""||(parseInt(cuadro1.style.left)+cuadro1.offsetWidth)>799)
+		if(parseInt(cuadro1.style.left)+cuadro1.offsetWidth >799)
+    	{			
+				if(posY<400 && posY >200) {
+					alert("Has ganado");
+				document.getElementById("cuadro1").style.top = 300 + "px";
+				document.getElementById("cuadro1").style.left = 0 + "px";
+				}
+				else{
+					alert("Has salido por derecha");
+					document.getElementById("cuadro1").style.top = 300 + "px";
+					document.getElementById("cuadro1").style.left = 0 + "px";
+					cuadro1.style.left=0+increment+'px';
+				}
+		}
+    	cuadro1.style.left=parseInt(cuadro1.style.left)+increment+'px';
+		parar = setTimeout("moveCuadro1()",50);
+    	return true;
+	};
+	
+	function disparo() {
+		var tiro = Math.floor(Math.random()*100);
+		var intensidad = Math.floor(Math.random()*6 +1);
+		if(tiro < 1) {return intensidad;}
+		else if(tiro >= 1 && tiro < 2) {return -1*intensidad;}  
+		else {return 0;} 
+	}
+</script>
+</head>
+
+<body>
+    <div id='cuadro1'></div>
+    <div id ='ralla'></div>
+</body>
+

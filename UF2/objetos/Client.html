@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head><title>Crea objecte Treballador</title></head>   
+<body> 
+<script type="text/javascript" >
+	function Client(nom, sexe,foto,ocupacio) {
+	    this.nom = nom;
+		this.sexe = sexe;
+		this.foto = foto;
+		this.ocupacio=ocupacio;
+		this.MostrarClient= muestra;
+		this.MostrarClientTaula=muestraTaula;
+	}	
+	function muestra(obj,name) {
+		for (var prop in obj) {
+			document.writeln(name + "." + obj[prop] + "<br>");
+		}
+	}
+	function muestraTaula(obj,name) {
+		var res = "<table border = '1'><tr>";
+		for (var prop in obj) {
+			res = res + "<td>" + name +"."+ prop+ "</td>";
+		}
+		res += "</tr>";
+		res += "<tr>";
+		for (var prop in obj) {
+			res = res + "<td>" + obj[prop] + "</td>";
+		}
+		res += "</tr></table>";
+		return res;
+	}
+	var c1 = new Client("Paco","H","foto1","Tecnico");
+	c1.MostrarClient(c1,"c2");
+	var c2 = new Client("Laura","M","foto2","Peluquera");
+	document.writeln(c2.MostrarClientTaula(c2,"Cliente2"));
+</script>   
+</body>   
+</html>  

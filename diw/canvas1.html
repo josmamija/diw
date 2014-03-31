@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Motion</title>
+<script>
+window.onload = function() {
+	var canvas = document.createElement("canvas"), c = canvas.getContext("2d");
+	canvas.width=400;
+	canvas.height=400;
+	document.body.appendChild(canvas);
+	c.fillStyle="black";
+	c.fillRect(0,0,canvas.width,canvas.height);
+	//var posX= canvas.width /2,
+	var posX= 20,
+		posY= canvas.height /2,
+		vx =2,
+		vy =-15,
+		gravity =0.98;
+	setInterval(function(){
+		c.fillStyle="black";
+		c.fillRect(0,0,canvas.width,canvas.height);
+		posX +=vx;
+		posY +=vy;
+		//vx *=0.98;
+		vy +=gravity;
+		if(posY >300){
+			vy *=-0.5;
+			posY =300;
+		}
+		c.fillStyle="white";
+		c.fillRect(posX,posY,10,10);
+		
+	},30);
+};
+</script>
+<style>
+body,html{
+margin : 0px;
+padding: 0px;
+}
+</style>
+</head>
+
+<body>
+</body>
+</html>

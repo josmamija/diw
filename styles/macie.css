@@ -1,0 +1,26 @@
+	td.norepeat{
+		background-image:url(../images/ds/blue_bar.jpg);
+		background-repeat: no-repeat;
+    		background-attachment: fixed;
+		background-color:#FFF;
+		vertical-align:middle;
+	}
+
+	td.skybg{
+		background-image:url(../images/ds/sky.gif);
+		background-repeat: no-repeat;
+    		background-attachment: fixed;
+	}
+	
+	td.sunbg{
+		background-image:url(../images/ds/sun.gif);
+		background-repeat: no-repeat;
+    		background-attachment: fixed;
+	}
+	
+	td.shadow{
+		background-image:url(../images/hp/ts1.jpg);
+		background-repeat: no-repeat;
+    		background-attachment: fixed;
+		vertical-align:top;
+	}

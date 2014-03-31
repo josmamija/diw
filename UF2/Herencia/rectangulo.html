@@ -1,0 +1,57 @@
+<html>
+<head><title>Herencia</title></head>
+<body>
+<script type="text/javascript" >
+function Rectangle() {
+	this.alto;
+	this.ancho;
+	this.PonerAlto = function(alto){
+			this.alto = alto;
+	}
+	this.EscribirAlto = function(){
+		return this.alto;	
+	}
+	
+	this.PonerAncho = function(ancho){
+			this.ancho = ancho;
+	}
+	this.EscribirAncho = function(){
+		return this.ancho;	
+	}	
+	this.Perimetro= function(){
+		return 2*this.alto+2*this.ancho;	
+	}
+	
+}
+
+function Lego(){
+	this.Nom;
+	this.Color;
+	this.Forma;
+	
+	this.PosarNom=function(nom){
+		this.Nom=nom;	
+	}
+	this.EscriureNom=function(){
+		return this.Nom;	
+	}
+	this.PosarColor=function(Color){
+		this.Color = Color;	
+	}	
+	this.EscriureColor=function(){
+		return this.Color;	
+	}
+}
+Lego.prototype= new Rectangle();
+Lego.prototype.constructor = Lego;
+var l1 = new Lego();
+l1.PonerAlto(6);
+document.write("<br>Alto Lego: "+ l1.EscribirAlto());
+r1=new Rectangle();
+r1.PonerAlto(4);
+r1.PonerAncho(3);
+document.write("<br>Alto: "+ r1.EscribirAlto());
+document.write("<br>Perimetro : " + r1.Perimetro());
+</script>
+</body>
+</html>

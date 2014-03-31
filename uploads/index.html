@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title> Subida y precarga ajax </title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Css -->
+   <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+   <!-- Javascript -->
+   <script src="../jquery/jquery.js"></script>
+   <script src="upload.js"></script>
+   <script src="subir.js"></script>
+   <script src="../bootstrap/js/bootstrap.min.js"></script>
+   
+   
+ </head>
+ <body>
+    <div class="container">
+       <h1> Subida y precarga ajax </h1>
+       <div id="respuesta" class="alert"></div>
+       <form action="javascript:void(0);">
+          <div class="row">
+             <div class="col-lg-2"> 
+                <label> Nombre el archivo: </label> 
+             </div>
+             <div class="col-lg-2">
+                <input type="text" name="nombre_archivo" id="nombre_archivo" />
+             </div>
+             <div class="col-lg-2">
+                <input type="file" name="archivo" id="archivo" />
+             </div> 
+          </div>
+          <hr />
+          <div class="row">
+             <div class="col-lg-2">
+                <input type="submit" id="boton_subir" value="Subir" class="btn btn-success" />
+             </div>
+             <div class="col-lg-4">
+                <progress id="barra_de_progreso" value="0" max="100"></progress>
+             </div>
+          </div>
+       </form>
+       <hr />
+       <div id="archivos_subidos"></div>
+    </div>
+ </body>
+</html>

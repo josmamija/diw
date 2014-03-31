@@ -1,0 +1,12 @@
+br.js - javascript detects browser and call appropriate style sheet
+used to detect Netscape 4, Internet Explorer 6, IE on Mac
+
+menu.js - the javascript menu. You can choose your own Javascrip or menu as long as the end
+result coresponds to Visual Identity Program.
+
+Heads up: if you use javascript for navigation, please include a solution for browsers
+that does not support javascript.
+
+Original.... source files being the basis for the scripts in use. Includes comments and examples.
+
+themenu.js - javascript with the menu options.

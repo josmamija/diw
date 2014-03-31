@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+ var letras = new Array("A","B","C","D","E","F","G");
+ document.writeln(letras);
+ // inserir "H" al final
+ letras.push("H");
+ document.writeln("<br>");
+ document.writeln(letras);
+ //Inserir "AA" i "AAA" al principi
+ letras.unshift("AA","AAA");
+ document.writeln("<br>");
+ document.writeln(letras);
+ 
+ //inseri "HH" al final
+ letras.push("HH");
+ document.writeln("<br>");
+ document.writeln(letras);
+ // inserir i remplaçar A,B,C,D,E,F,G per BB,CC,DD,EE,FF,GG
+ letras.splice(2,7,"BB","CC","DD","EE","FF","GG");
+ document.writeln("<br>");
+ document.writeln(letras);
+  // Esborrar "AAA"
+ letras.splice(1,1);
+ document.writeln("<br>");
+ document.writeln(letras);
+ // esborrar H
+ letras.splice(7,1);
+ document.writeln("<br>");
+ document.writeln(letras);
+ 
+</script>
+
+</body>
+</html>

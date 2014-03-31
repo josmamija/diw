@@ -1,0 +1,105 @@
+	.formBox{
+		font-family: arial, verdana, helvetica, sans-serif;
+		width:100px;
+		font-size: 15px;
+	}
+	
+	.MenuPostStyle{
+		position:relative;
+		padding-left:4px;
+	}
+	
+	li.arrow{
+		font-family: arial, verdana, helvetica, sans-serif;
+		color: #000;
+		font-size: 10pt;
+		margin-left:10px;
+		padding-bottom: 4px;
+		text-indent: 12pt;
+	}
+	
+	td{
+		background-image: none;
+		background-repeat: no-repeat;
+		font-family: arial, verdana, helvetica, sans-serif;
+		color: #000;
+		font-size: 10pt;
+	}
+	
+	td.arrow{
+		width:13px;
+		vertical-align:top;
+		background-image:url(images/hp/arr.gif); 
+		background-repeat:no-repeat;
+	}
+	
+	td.bodytext{
+		font-family: arial, verdana, helvetica, sans-serif;
+		font-size:10pt;
+		color:#000;
+		margin-left:0px;
+	}
+
+	td.skybg{
+		background-image: url(images/ds/sky.gif);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+	}
+	
+	td.sunbg{
+		background-image: url(images/ds/sun.gif);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+	}
+	
+	td.bar{
+		background-color:#FFCD20;
+		background-image: url(images/ds/bar_4.gif);
+		background-repeat:repeat-y;
+		height:100%;
+		width:14px;
+	}
+	
+	td.blueline{
+		background-image: url(images/ds/blue_bar.jpg);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+		background-color:#FFF;
+		text-vertical-align:middle;
+	}
+	
+	td.norepeat1{
+		background-image:url(images/ds/orange.jpg);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+		background-color:#FE7028;
+		width:746;
+		height:31;
+		font-family: arial, verdana, helvetica, sans-serif;
+		font-size:16pt;
+		color:#FFFFFF;
+		padding-left:6px;
+	} 
+	
+	.inputbutton{
+		background-color: #ffffff;
+		vertical-align:top;
+		border: none;
+		color: #024697;
+		cursor: pointer;
+		font-weight: bold;
+		height: 19px;
+		border-left: 0px solid #990000;
+		border-right: 0px solid #990000;
+		border-top: 0px solid #990000;
+		border-bottom: 0px solid #990000;
+	}
+	
+	.search{
+		text-align:left;
+		color: #00206E;
+		font-size: 10pt;
+		font-weight: 600;
+		bottom-margin:2px;
+		top-margin:6px;
+	}

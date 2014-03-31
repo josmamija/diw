@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head><title>Crea objecte Treballador</title></head>   
+<body> 
+<script type="text/javascript" >
+	function Treballador() {
+	    this.nom;
+		this.salari;
+		this.donarNom=function(){ return this.nom;}
+		this.posarNom=function(nom){ this.nom=nom;}
+		this.DonarSalari= function(){return this.salari;}
+		this.PosarSalari=function(salari){this.salari =salari;}
+		this.PujarSalari = function(){
+			this.salari *= 1.15;
+		}
+	}	
+	var t1 = new Treballador();
+	t1.posarNom("Montse");
+	var t2 = new Treballador();
+	t2.posarNom("David");
+	var t3 = new Treballador();
+	t3.posarNom("Laura");
+	document.writeln(t1.donarNom());
+	document.writeln(t2.donarNom());
+	document.writeln(t3.donarNom());
+	t1.telefon="933523699";
+	document.writeln(t1.telefon);
+	document.writeln(t2.telefon); // no esta definido, t2 no tierne esta propiedad
+	document.writeln(t2.nom);
+	Treballador.prototype.empresa="Telefonica";
+	document.writeln(t1.empresa);
+	document.writeln(t2.empresa);
+	document.writeln(t3.empresa);
+	var t4 = new Treballador();
+	t4.posarNom("Francisco");
+	t4.PosarSalari(100);
+	document.writeln("Salari :" + t4.DonarSalari());
+	t4.PujarSalari();
+	document.writeln("Salari :" + t4.DonarSalari());
+</script>   
+</body>   
+</html>  

@@ -1,0 +1,2626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height: 100%;" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head>
+<!-- sfUmqxyczMs19g3O3FeRR8tocDQ -->
+<meta content="es" name="language">
+<meta content="es" http-equiv="content-language">
+<meta content="A30C6C34CBA543B2325C9359CFDA719B" name="msvalidate.01">
+<script async="" src="closures-en-javascript-entiendelos-de_fitxers/cbgapi.loaded_1"></script><script src="closures-en-javascript-entiendelos-de_fitxers/ga.html" async="" type="text/javascript"></script><script async="" src="closures-en-javascript-entiendelos-de_fitxers/cbgapi.loaded_0"></script><script src="closures-en-javascript-entiendelos-de_fitxers/addthis_widget.html" type="text/javascript"></script>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript">(function() { var a=window,b="jstiming",d="tick";var e=function(c){this.t={};this.tick=function(c,p,h){h=void 0!=h?h:(new Date).getTime();this.t[c]=[h,p]};this[d]("start",null,c)},f=new e;a.jstiming={Timer:e,load:f};if(a.performance&&a.performance.timing){var g=a.performance.timing,j=a[b].load,k=g.navigationStart,l=g.responseStart;0<k&&l>=k&&(j[d]("_wtsrt",void 0,k),j[d]("wtsrt_","_wtsrt",l),j[d]("tbsd_","wtsrt_"))}
+try{var m=null;a.chrome&&a.chrome.csi&&(m=Math.floor(a.chrome.csi().pageT),j&&0<k&&(j[d]("_tbnd",void 0,a.chrome.csi().startE),j[d]("tbnd_","_tbnd",k)));null==m&&a.gtbExternal&&(m=a.gtbExternal.pageT());null==m&&a.external&&(m=a.external.pageT,j&&0<k&&(j[d]("_tbnd",void 0,a.external.startE),j[d]("tbnd_","_tbnd",k)));m&&(a[b].pt=m)}catch(n){};a.tickAboveFold=function(c){var i=0;if(c.offsetParent){do i+=c.offsetTop;while(c=c.offsetParent)}c=i;750>=c&&a[b].load[d]("aft")};var q=!1;function r(){q||(q=!0,a[b].load[d]("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",r,!1):a.attachEvent("onscroll",r);
+ })();</script>
+<meta content="true" name="MSSmartTagsPreventParsing">
+<meta content="blogger" name="generator">
+<link href="http://www.variablenotfound.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="Variable not found - Atom" href="http://www.variablenotfound.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Variable not found - RSS" href="http://www.variablenotfound.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Variable not found - Atom" href="http://www.blogger.com/feeds/27752126/posts/default">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=27752126">
+<link rel="alternate" type="application/atom+xml" title="Variable not found - Atom" href="http://www.variablenotfound.com/feeds/2924211610330785303/comments/default">
+<link rel="image_src" href="http://lh6.ggpht.com/-4HyIjIhR_2c/TomfdXCPZoI/AAAAAAAABoI/qI5chbQKIl0/s72-c/image%25255B2%25255D.png?imgmax=800">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Closures en JavaScript: entiéndelos de una vez por todas | Variable not found</title>
+<script gapi_processed="true" src="closures-en-javascript-entiendelos-de_fitxers/plusone.js" type="text/javascript">
+  {lang: 'es'}
+</script>
+<link href="http://www.sodefesa.es/jmaguilar/recursos/jmaguilar.ico" rel="shortcut icon" type="image/x-icon">
+<link href="http://www.sodefesa.es/jmaguilar/recursos/jmaguilar.ico" rel="icon" type="image/x-icon">
+<link href="closures-en-javascript-entiendelos-de_fitxers/shCore.css" rel="stylesheet" type="text/css">
+<link href="closures-en-javascript-entiendelos-de_fitxers/shThemeDefault.css" rel="stylesheet" type="text/css">
+<script src="closures-en-javascript-entiendelos-de_fitxers/shCore.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushCpp.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushCSharp.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushCss.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushJava.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushJScript.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushSql.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushVb.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/shBrushXml.js" type="text/javascript"></script>
+<script language="javascript"> 
+SyntaxHighlighter.config.bloggerMode = true;
+SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+SyntaxHighlighter.all();
+</script>
+<!-- Metas talastrancas -->
+<meta content="José María Aguilar (jmaguilar)" name="author">
+<meta content="asp.net mvc,vnf,vnf soluciones,asp.net,.net,frameworks,patrones,c#,vb.net,ajax,javascript,visual basic,mono,java,desarrollo,programación,desarrollo,tutorial,paso a paso,software,articulos técnicos,jmaguilar,variable not found" name="keywords">
+<meta content="Closures en JavaScript: entiéndelos de una vez por todas y otros artículos, noticias, curiosidades y reflexiones sobre el mundo del desarrollo de software, internet, u otros temas relacionados con la tecnología" name="description">
+<link type="text/css" rel="stylesheet" href="closures-en-javascript-entiendelos-de_fitxers/1937454905-widget_css_bundle.css">
+<link type="text/css" rel="stylesheet" href="closures-en-javascript-entiendelos-de_fitxers/authorization.css">
+<style id="page-skin-1" type="text/css"><!--
+body {
+background: #00305F url('http://www.sodefesa.es/jmaguilar/recursos/bgbody.png') repeat-x scroll 0 0;
+}
+div.mainbody { position: relative; background-color: white; padding-top: 2px;  }
+table.header { height: 100px; }
+table.header, div.mainbody
+{
+width: 1125px;
+margin: 0 auto 0 auto;
+}
+.addthis_button_facebook_like iframe { width: 110px !important;  }
+#footer
+{
+margin-top: 1em;
+background-color: #8591A8;
+padding: 3px 0 3px 0;
+color: white;
+font-size: 0.9em;
+text-align: center;
+}
+div.subheader {
+width: 1125px;
+margin: 0 auto 0 auto;
+vertical-align: middle;
+padding: 0;
+color: white;
+text-align: left;
+background-color: #7BA846;
+}
+.subheader form {  padding-lefT: 6px;  }
+.invitado
+{
+background: white url("http://www.sodefesa.es/jmaguilar/recursos/bloggerinvitado.png") no-repeat scroll left top;
+float: right;
+border-radius: 5px;
+border: 1px solid black;
+padding: 38px 0 0 0; margin: 0 0 10px 10px;
+box-shadow: 0px 0px 10px black;
+width: 220px;
+}
+.skiptranslate div {
+text-align: center;
+}
+.skiptranslate span {
+display: block;
+text-align: center;
+}
+.invitado .datos {
+margin: 0; padding: 10px;
+}
+.invitado h2.bloggerinvitado {display: none; }
+.invitado .datos img { float: right; margin: 0 0 10px 10px; }
+.invitado .datos h2 { font-size: 1.1em; margin: 0; padding: 0; }
+.invitado .datos h3 { font-size: 0.9em; font-style: italic; margin: 0 0 5px 0; padding: 0; }
+.invitado .datos p { margin: 10px 0 0 0; font-size: 0.8em; }
+.megusta { margin-bottom: 4px; }
+body
+{
+font-family: "Trebuchet MS", "Tahoma", "Arial";
+font-size: 90%;
+padding: 0;
+margin: 0;
+overflow-x: none;
+}
+a
+{
+color: #35537A;
+}
+a:hover
+{
+color: #45638A;
+}
+#jump
+{
+display: none;
+}
+h1
+{
+display: none;
+}
+table.header
+{
+background: #35537A url(http://bp2.blogger.com/_O9D62hXq-ng/R1KOitaknBI/AAAAAAAAAM4/DLhIk3OqU4I/s1600-R/hfill.png) repeat-x left top;
+color: #91A3C8;
+border: 0px;
+border-collapse: collapse;
+}
+a[hreflang="en"]
+{
+padding-right: 19px;
+display: inline-block;
+background-image: url(http://4.bp.blogspot.com/_O9D62hXq-ng/SLw1oWDAq_I/AAAAAAAAAlM/sjNZUKGlF4Y/s200/EnIngles.jpg);
+background-position: right center;
+background-repeat: no-repeat;
+}
+#alogo
+{
+display: block;
+float: left;
+width: 384px;
+padding: 0;
+}
+#alogo img
+{
+margin-top: 18px;
+margin-left: 20px;
+border: 0;
+}
+td.mvp { padding-bottom: 10px; width: 207px; height: 88px; text-align: center; background-color: transparent; vertical-align: bottom; }
+td.mvp img { border: 0;}
+td.centro
+{
+padding-bottom: 10px;
+vertical-align: bottom;
+text-align: right;
+}
+td.centro h2
+{
+display: inline;
+font-weight: bold;
+font-size: 1.2em;
+padding-right: 10px;
+padding-left: 0px;
+border-right: 1px solid #91A3C8;
+}
+td.centro a
+{
+color: #5386C8;
+text-decoration: none;
+padding-top: 0;
+padding-bottom: 0;
+padding-left: 5px;
+padding-right: 5px;
+border-left: 1px solid #91A3C8;
+}
+td.centro a:hover
+{
+color: #A1B3D8;
+}
+td.centro a.first
+{
+margin-left: 1em;
+padding-left: 0px;
+border-left: 0;
+}
+.descripcion { color: #f0f0f0; font-size: 0.8em; margin-right: 5px; margin-bottom: 0;  }
+#sbi
+{
+font-size: 0.7em;
+height: auto;
+width: 170px;
+background-color: #e0e0e0;
+color: #6B9836;
+border-top: 1px solid #4A7703;
+border-left: 1px solid #4A7703;
+border-right: 1px solid #ACD965;
+border-bottom: 1px solid #ACD965;
+padding: 2px 2px 2px 2px;
+margin-top: 2px;
+margin-left: 0px;
+margin-bottom: 2px;
+margin-right: 2px;
+}
+p.licencia
+{
+font-size: 80%;
+font-color: #c0c0c0;
+line-height: 80%;
+vertical-align: middle;
+text-align: right;
+font-style: italic;
+margin-top: 0;
+}
+#btn
+{
+font-size: 0.7em;
+height: auto;
+border-bottom: 1px solid #4A7703;
+border-right: 1px solid #4A7703;
+border-left: 1px solid #ACD965;
+border-top: 1px solid #ACD965;
+padding: 1 1 1 1;
+background-color: #8CB945;
+color: white;
+margin-top: 2px;
+margin-bottom: 2px;
+margin-left: 0px;
+margin-right: 0px;
+}
+div#navbar
+{
+display: none;
+}
+#nav
+{
+position: absolute;
+left: 0;
+width: 176px;
+margin: 0 0 0 0;
+padding: 2px 0 0 5px;
+}
+div#nav h2
+{
+margin: 0 0 5px 0;
+font-size: 1.2em;
+font-weight: bold;
+color: #7BA846;
+}
+div#nav h3
+{
+margin: 0 0 0 0;
+font-size: 1.1em;
+font-weight: bold;
+color: #F29402;
+}
+#nav ul.proyectos
+{
+padding-left: 1em;
+margin: 0 0 0 0;
+}
+#nav ul.proyectos li
+{
+list-style-position: inside;
+list-style-type: none;
+color: #404040;
+font-size: 0.9em;
+padding-left: 0;
+padding-right: 10px;
+margin-top: 2px;
+}
+ul.categorias
+{
+padding-left: 0;
+margin-left: 1em;
+margin-bottom: 0;
+margin-top: 0;
+}
+li.categorias
+{
+list-style: none;
+padding-left: 0;
+text-indent: 0;
+}
+li.expanded li.expanded li {
+text-indent: -25px !important;
+}
+li.categorias, li.archivedate
+{
+color: #404040;
+font-size: 0.9em;
+}
+li.categorias a
+{
+color: #404040;
+font-size: 0.9em;
+}
+div#ArchiveList
+{
+color: #404040;
+font-size: 1em;
+}
+#ArchiveList *
+{
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+#ArchiveList ul li
+{
+margin: 0 0 0 0;
+}
+#ArchiveList ul li ul
+{
+margin: 0 0 0 0;
+}
+#ArchiveList ul li a
+{
+font-size: 1.1em;
+font-weight: bold;
+color: #F29402;
+}
+div#ArchiveList ul li ul li a
+{
+font-size: 1em;
+color: #7BA846;
+}
+span.zippy, .toggle-open
+{
+font-size: 1em;
+color: #404040;
+}
+#ArchiveList ul.posts
+{
+padding-left: 0;
+margin: 0 0 0 0px;
+text-indent: 0px;
+}
+#popular
+{
+font-size: 100%;
+margin: 0; padding: 0 0 0 20px;
+}
+li.postitem	        {
+text-indent: 0px;
+padding-left: 20px;
+}
+#popular li {
+font-size: 0.9em;
+margin: 0 0 0 10px;
+padding: 0;
+}
+#ArchiveList ul.posts li a, .popular-posts ul li a
+{
+color: #404040;
+font-size: 0.9em;
+}
+div.bloquegris
+{
+background-color: #eaeaea;
+padding: 5px 5px 10px 5px;
+margin: 0px 0 3px 0;
+border-radius: 10px 10px;
+}
+div.bloqueverde
+{
+background-color: #E0FFE0;
+padding: 5px 5px 5px 5px;
+border-radius: 10px 10px;
+}
+#headerads
+{
+height: 88px;
+width: 728px;
+padding: 0;
+margin: 2px 0 2px 185px;
+text-align: left;
+background-color: white;
+}
+#sidebar
+{
+position: absolute;
+right: 0;
+top: 0px;
+width: 207px;
+padding-top: 10px;
+background-color: white;
+padding-left: 1px;
+text-align: center;
+}
+#sidebar h2
+{
+color: #35537A;
+text-align: center;
+background-color: #E6EBF6;
+font-size: 0.8em;
+}
+#body
+{
+width: 706px;
+margin: 5px 210px 0 185px;
+padding: 0px 10px 10px 10px;
+border-left: 1px solid #f0f0f0;
+border-right: 1px solid #f0f0f0;
+border-top: 1px solid #e0e0e0;
+border-radius: 10px 10px;
+background-color: #fefefe;
+}
+div.blog-posts iframe
+{
+margin-bottom: 1em;
+}
+div.post div.fecha
+{
+color: #7BA846;
+margin: 0 0 15px 0;
+text-transform: lowercase;
+font-size: 0.9em;
+font-weight: bold;
+border-bottom: 1px dotted #e0e0e0;
+}
+div.post .titulopost
+{
+display: block;
+margin: 10px 0 0 0;
+color: #35537A;
+font-size: 1.8em;
+padding: 3px 3px 3px 0px;
+}
+.titulopost a
+{
+text-decoration: none;
+color: #35537A;
+}
+div#body div.post pre
+{
+background-color: #FBF8f6;
+border: 1px solid #e0e0e0;
+padding: 3px 3px 3px 3px;
+overflow: auto;
+}
+pre {
+border: 1px solid #d0d0d0;
+padding: 3px;
+background-color: #f0f0f0;
+}
+div.post-body blockquote
+{
+margin-left: 4em;
+margin-top: 1em;
+margin-bottom: 1em;
+background-color: #eaffea;
+border-top: 1px solid #e0ffe0;
+border-bottom: 1px solid #e0ffe0;
+padding: 5px 5px 5px 5px;
+font-style: italic;
+}
+div.post-footer
+{
+color: black;
+padding: 5px 5px 5px 20px;
+margin-bottom: 2em;
+margin-top: 1em;
+border: 1px dotted #c0c0c0;
+background-color: #FBF8C6;
+border-radius: 5px 5px;
+box-shadow: 5px 5px 3px #aaa;
+}
+div.post-footer a
+{
+color: #000080;
+}
+div.post-comment-link
+{
+margin-top: 0; margin-bottom: 0;
+color: #808080;
+}
+dt.comment-author
+{
+margin-top: 1em;
+}
+.post-footer-line
+{
+margin-top: 0; margin-bottom: 0;
+color: #404040;
+}
+.post-footer-line-1
+{
+margin-top: 0; margin-bottom: 0;
+color: #404040;
+}
+.post-footer-line-2
+{
+margin-top: 0; margin-bottom: 0;
+color: #404040;
+font-style: italic;
+}
+.post-footer-line-3
+{
+margin-top: 0; margin-bottom: 0;
+color: #404040;
+display: none;
+}
+
+--></style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-364748-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",i="?m=1";function j(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+i;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var k=j();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script><script src="closures-en-javascript-entiendelos-de_fitxers/google_top_exp.html" type="text/javascript"></script><style>.gc-bubbleDefault{text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style><link href="closures-en-javascript-entiendelos-de_fitxers/translateelement.css" charset="UTF-8" rel="stylesheet" type="text/css"><script src="closures-en-javascript-entiendelos-de_fitxers/main_ca.js" charset="UTF-8" type="text/javascript"></script><script src="closures-en-javascript-entiendelos-de_fitxers/element_main.js" charset="UTF-8" type="text/javascript"></script></head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+<div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe src="closures-en-javascript-entiendelos-de_fitxers/navbar.html" name="navbar-iframe" id="navbar-iframe" vspace="0" tabindex="0" style="" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div>
+<script gapi_processed="true" type="text/javascript" src="closures-en-javascript-entiendelos-de_fitxers/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\07527752126\46blogName\75Variable+not+found\46publishMode\75PUBLISH_MODE_HOSTED\46navbarType\75BLACK\46layoutType\75LAYOUTS\46searchRoot\75http://www.variablenotfound.com/search\46blogLocale\75es_ES\46v\0752\46homepageUrl\75http://www.variablenotfound.com/\46targetPostID\0752924211610330785303\46blogPostOrPageUrl\75http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html\46vt\75972147990864114783',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id="jump">
+<a href="#contenido">Saltar al contenido</a>
+</div>
+<h1>Variable not found. Artículos, noticias, curiosidades, 
+reflexiones... sobre el mundo del desarrollo de software, internet, u 
+otros temas relacionados con la tecnología. C#, ASP.NET, ASP.NET MVC, 
+HTML, Javascript, CSS, jQuery, Ajax, VB.NET, componentes, 
+herramientas...</h1>
+<!-- maquetado con tablas por cortesía del estándar CSS };-) -->
+<table class="header">
+<tbody><tr>
+<td style="position: relative;">
+<a href="http://www.variablenotfound.com/" id="alogo" title="Ir a la página de entrada">
+<img alt="Logo de variablenotfound.com" src="closures-en-javascript-entiendelos-de_fitxers/logo2.png"></a>
+<!-- Extra de navidad <img src='http://bp0.blogger.com/_O9D62hXq-ng/R20JnWmU3KI/AAAAAAAAAO8/nO3rHynIXL4/s320/gorro.png' style='position: absolute; top: 10px; left: -7px'/> -->
+</td>
+<td class="centro">
+<h2>
+                    el blog de José M. Aguilar
+                </h2>
+<a class="first" href="http://www.variablenotfound.com/" title="Ir a la página de entrada">
+                    Inicio</a>
+<a href="http://www.variablenotfound.com/p/el-autor.html" title="Más sobre el autor">
+                        El autor</a>
+<a href="http://www.variablenotfound.com/p/formulario-de-contacto.html" title="Contactar con autor">
+                            Contactar</a>
+<p class="descripcion">
+                    Artículos, noticias, curiosidades, reflexiones... sobre el mundo del desarrollo<br>
+                    de software, internet, u otros temas relacionados con la tecnología</p>
+</td>
+<td class="mvp">
+<a href="http://mvp.support.microsoft.com/gp/aboutmvp" target="_blank" title="¡Microsoft MVP!"><img alt="¡Microsoft MVP!" src="closures-en-javascript-entiendelos-de_fitxers/mvp.png" style="width: 180px;"></a>
+</td>
+</tr>
+</tbody></table>
+<div class="subheader">
+<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+<div>
+<input name="cx" value="partner-pub-7503409589004601:nimd6ytpa11" type="hidden">
+<input name="ie" value="UTF-8" type="hidden">
+<input style="background: url(&quot;http://www.google.com/cse/intl/es/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" id="sbi" name="q" size="20" type="text">
+</div>
+<input value="www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html" name="siteurl" type="hidden"><input value="www.google.es/url?sa=t&amp;rct=j&amp;q=javascript%20funciones%20an%C3%B3nimas%20de%20cierre&amp;source=web&amp;cd=20&amp;ved=0CG0QFjAJOAo&amp;url=http%3A%2F%2Fwww.variablenotfound.com%2F2012%2F10%2Fclosures-en-javascript-entiendelos-de.html&amp;ei=M3a0UOGGFobfsgb8sIDACw&amp;usg=AFQjCNGlbSgx-QsEVTI7WkBVYr5jpP3WNQ" name="ref" type="hidden"><input name="ss" type="hidden"></form>
+<script src="closures-en-javascript-entiendelos-de_fitxers/brand" type="text/javascript"></script>
+</div>
+<div class="mainbody">
+<div id="nav">
+<div class="bloquegris">
+<h2>
+                        Principal</h2>
+<ul class="proyectos">
+<li><a href="http://www.variablenotfound.com/" title="Ir a la página de inicio">Inicio</a></li>
+<li><a href="http://www.variablenotfound.com/p/el-autor.html" title="Acerca del autor">
+                            El autor</a></li>
+<li><a href="http://www.variablenotfound.com/p/formulario-de-contacto.html" title="Contactar con el autor">Contactar</a></li>
+</ul>
+</div>
+<!-- Archivo del blog -->
+<div class="bloquegris">
+<div class="section" id="navelement1"><div class="widget BlogArchive" id="BlogArchive1">
+<h2>
+Archivo del blog</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul>
+<li class="archivedate expanded">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=YEARLY-1325372400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy toggle-open">▼ </span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2012-01-01T00:00:00%2B01:00&amp;updated-max=2013-01-01T00:00:00%2B01:00&amp;max-results=50">
+2012</a>
+<span class="post-count" dir="ltr">(83)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1351724400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate expanded">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=MONTHLY-1349042400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy toggle-open">▼ </span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(10)</span>
+<ul class="posts">
+<li><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html">
+Closures en JavaScript: entiéndelos de una vez por...</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-99.html">
+Enlaces interesantes 99</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/libro-fundamentos-de-javascript-y-ajax.html">
+Libro: Fundamentos de Javascript y AJAX para desar...</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-98.html">
+Enlaces interesantes 98</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enums-con-desplegables-automaticos-en.html">
+Enums con desplegables automáticos en MVC</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-97.html">
+Enlaces interesantes 97</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/curso-de-mvc-4-en-campusmvp.html">
+Curso de MVC 4 en CampusMVP</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-96.html">
+Enlaces interesantes 96</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/typescript-un-primer-vistazo.html">
+TypeScript: un primer vistazo</a></li>
+<li><a href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-95.html">
+Enlaces interesantes 95</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1346450400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1341093600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1338501600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(11)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1335823200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1333231200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1330556400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1328050800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1325372400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2012_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1293836400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2011-01-01T00:00:00%2B01:00&amp;updated-max=2012-01-01T00:00:00%2B01:00&amp;max-results=50">
+2011</a>
+<span class="post-count" dir="ltr">(111)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1322694000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1320102000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1317420000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1314828000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(13)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1309471200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1306879200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1304200800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(15)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1301608800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1298934000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1296514800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(11)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1293836400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2011_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1262300400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2010-01-01T00:00:00%2B01:00&amp;updated-max=2011-01-01T00:00:00%2B01:00&amp;max-results=50">
+2010</a>
+<span class="post-count" dir="ltr">(87)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1291158000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1288566000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1285884000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1283292000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1277935200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1275343200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1272664800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(11)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1270072800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1267398000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1264978800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1262300400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2010_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1230764400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2009-01-01T00:00:00%2B01:00&amp;updated-max=2010-01-01T00:00:00%2B01:00&amp;max-results=50">
+2009</a>
+<span class="post-count" dir="ltr">(74)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1259622000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1257030000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1254348000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1251756000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1246399200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1243807200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1241128800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1238536800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1235862000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1233442800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1230764400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2009_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1199142000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2008-01-01T00:00:00%2B01:00&amp;updated-max=2009-01-01T00:00:00%2B01:00&amp;max-results=50">
+2008</a>
+<span class="post-count" dir="ltr">(90)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1228086000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1225494000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1222812000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1220220000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1217541600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_08_01_archive.html">
+agosto</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1214863200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1212271200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1209592800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1207000800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1204326000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1201820400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1199142000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2008_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1167606000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2007-01-01T00:00:00%2B01:00&amp;updated-max=2008-01-01T00:00:00%2B01:00&amp;max-results=50">
+2007</a>
+<span class="post-count" dir="ltr">(83)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1196463600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1193871600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(10)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1191189600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1188597600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(15)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1185919200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_08_01_archive.html">
+agosto</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1183240800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1180648800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1177970400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1175378400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_04_01_archive.html">
+abril</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1172703600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_03_01_archive.html">
+marzo</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1170284400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_02_01_archive.html">
+febrero</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1167606000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2007_01_01_archive.html">
+enero</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1136070000000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/search?updated-min=2006-01-01T00:00:00%2B01:00&amp;updated-max=2007-01-01T00:00:00%2B01:00&amp;max-results=39">
+2006</a>
+<span class="post-count" dir="ltr">(39)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1164927600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_12_01_archive.html">
+diciembre</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1162335600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_11_01_archive.html">
+noviembre</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1159653600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_10_01_archive.html">
+octubre</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1157061600000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_09_01_archive.html">
+septiembre</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1154383200000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_08_01_archive.html">
+agosto</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1151704800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_07_01_archive.html">
+julio</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1149112800000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_06_01_archive.html">
+junio</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1146434400000&amp;toggleopen=MONTHLY-1349042400000">
+<span class="zippy">
+
+              ►
+            
+</span></a>
+<a class="post-count-link" href="http://www.variablenotfound.com/2006_05_01_archive.html">
+mayo</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=navelement1" onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target="configBlogArchive1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+<!-- Lista de categorías -->
+<div class="bloquegris">
+<div class="section" id="navbarelement2"><div class="widget PopularPosts" id="PopularPosts1">
+<h2>Top semanal</h2>
+<div class="widget-content popular-posts">
+<ul id="popular">
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2008/04/otras-101-citas-clebres-del-mundo-de-la.html">Otras 101 citas célebres del mundo de la informática</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2012/02/pasar-variables-de-script-un-urlaction.html">Pasar variables de script a un Url.Action() o Html.ActionLink()</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2008/02/101-citas-clebres-del-mundo-de-la.html">101 citas célebres del mundo de la informática</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2010/05/aspnet-mvc-2-quince-cuestiones-que.html">ASP.NET MVC 2: Quince cuestiones que deberías conocer</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2008/01/32-tcnicas-de-produccin-de-ideas.html">32 técnicas de producción de ideas</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2009/10/jqgrid-grids-espectaculares-para-aspnet.html">jqGrid: Grids espectaculares para ASP.NET MVC, paso a paso</a>
+</li>
+<li style="margin: 0;">
+<a href="http://www.variablenotfound.com/2012/11/enlaces-interesantes-100.html">Enlaces interesantes ¡100!</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=PopularPosts&amp;widgetId=PopularPosts1&amp;action=editWidget&amp;sectionId=navbarelement2" onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target="configPopularPosts1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" id="Label1">
+<div style="margin-top: 25px;"></div>
+<h2>
+Categorías</h2>
+<div class="widget-content">
+<ul class="categorias">
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/.net">
+.net</a>
+
+                                                    (61) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/ajax">
+ajax</a>
+
+                                                    (18) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/antispam">
+antispam</a>
+
+                                                    (16) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/asp.net">
+asp.net</a>
+
+                                                    (147) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/aspnetmvc">
+aspnetmvc</a>
+
+                                                    (149) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/auges">
+auges</a>
+
+                                                    (11) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/autobombo">
+autobombo</a>
+
+                                                    (17) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/blogging">
+blogging</a>
+
+                                                    (45) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/buenas%20pr%C3%A1cticas">
+buenas prácticas</a>
+
+                                                    (24) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/c%23">
+c#</a>
+
+                                                    (54) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/consultas">
+consultas</a>
+
+                                                    (14) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/css">
+css</a>
+
+                                                    (16) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/curiosidades">
+curiosidades</a>
+
+                                                    (34) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/desarrollo">
+desarrollo</a>
+
+                                                    (223) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/dise%C3%B1o">
+diseño</a>
+
+                                                    (11) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/enlaces">
+enlaces</a>
+
+                                                    (97) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/est%C3%A1ndares">
+estándares</a>
+
+                                                    (12) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/eventos">
+eventos</a>
+
+                                                    (16) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/herramientas">
+herramientas</a>
+
+                                                    (19) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/historias">
+historias</a>
+
+                                                    (20) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/humor">
+humor</a>
+
+                                                    (22) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/javascript">
+javascript</a>
+
+                                                    (28) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/jquery">
+jquery</a>
+
+                                                    (17) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/microsoft">
+microsoft</a>
+
+                                                    (13) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/mono">
+mono</a>
+
+                                                    (15) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/noticias">
+noticias</a>
+
+                                                    (27) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/novedades">
+novedades</a>
+
+                                                    (41) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/personal">
+personal</a>
+
+                                                    (13) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/programaci%C3%B3n">
+programación</a>
+
+                                                    (106) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/scripting">
+scripting</a>
+
+                                                    (11) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/servicios%20on-line">
+servicios on-line</a>
+
+                                                    (37) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/software%20libre">
+software libre</a>
+
+                                                    (11) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/spam">
+spam</a>
+
+                                                    (17) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/tecnolog%C3%ADa">
+tecnología</a>
+
+                                                    (12) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/trucos">
+trucos</a>
+
+                                                    (103) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/t%C3%A9cnicas%20de%20spam">
+técnicas de spam</a>
+
+                                                    (12) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/vacaciones">
+vacaciones</a>
+
+                                                    (12) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/variablenotfound.com">
+variablenotfound.com</a>
+
+                                                    (14) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/vb.net">
+vb.net</a>
+
+                                                    (23) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/vs2008">
+vs2008</a>
+
+                                                    (28) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/web">
+web</a>
+
+                                                    (49) </li>
+<li class="categorias">
+<a href="http://www.variablenotfound.com/search/label/xhtml">
+xhtml</a>
+
+                                                    (17) </li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=Label&amp;widgetId=Label1&amp;action=editWidget&amp;sectionId=navbarelement2" onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target="configLabel1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div id="headerads">
+<script type="text/javascript">google_ad_client = "pub-7503409589004601";
+google_ad_host = "pub-1556223355139109";
+google_ad_host_channel="00000+00031+00005+00012";
+google_ad_slot = "3658539994";
+google_ad_width = 728;
+google_ad_height = 90;
+</script><script src="closures-en-javascript-entiendelos-de_fitxers/show_ads.html" type="text/javascript"></script>
+</div>
+<div id="sidebar">
+<a href="http://www.campusmvp.com/catalogo/Product-Desarrollo-Web-con-ASP.NET-MVC-4_92.aspx" title="Curso de ASP.NET MVC 4 en CampusMVP"><img alt="Curso de ASP.NET MVC 4 en CampusMVP" src="closures-en-javascript-entiendelos-de_fitxers/curso-mvc-4-190x140.jpg" style="border: 0; border-radius: 5px 5px;"></a>
+<div class="bloque" style="margin-top: 5px;">
+<a href="http://feeds.feedburner.com/vnf" rel="rss" title="Suscríbete al RSS"><img alt="Suscríbete al RSS" src="closures-en-javascript-entiendelos-de_fitxers/feed.png" style="border: 0"></a>
+<a href="http://www.twitter.com/jmaguilar" title="Síguenos en Twitter"><img alt="Twitter" src="closures-en-javascript-entiendelos-de_fitxers/twitter.png" style="border: 0"></a>
+<a href="http://www.facebook.com/variablenotfound" title="Síguenos en Facebook"><img src="closures-en-javascript-entiendelos-de_fitxers/facebook.png" style="border: 0"></a>
+<div style="text-align: center; margin: 3px 0 3px 0;"><a href="http://feeds.feedburner.com/vnf" title="Suscribir en un lector"><img alt="" src="closures-en-javascript-entiendelos-de_fitxers/vnf.gif" style="border: 0" height="26" width="88"></a></div>
+<script src="closures-en-javascript-entiendelos-de_fitxers/a.html" type="text/javascript"></script><noscript><a href='http://twittercounter.com/jmaguilar'>José María Aguilar on Twitter Counter.com</a></noscript>
+<iframe allowtransparency="true" src="closures-en-javascript-entiendelos-de_fitxers/likebox.html" style="border:none; overflow:hidden; width:195px; height:288px;" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="bloque">
+<div class="section" id="visitas"><div class="widget HTML" id="HTML1">
+<h2 class="title">In your language</h2>
+<div class="widget-content">
+<div id="google_translate_element"><div style="" dir="ltr" class="skiptranslate goog-te-gadget"><div id=":0.targetLanguage"><select class="goog-te-combo"><option selected="selected" value="">Seleccioneu l'idioma</option></select></div>Tecnologia de <span style="white-space:nowrap"><a class="goog-logo-link" href="http://translate.google.com/" target="_blank"><img src="closures-en-javascript-entiendelos-de_fitxers/google_logo_41.png" style="padding-right: 3px" height="13px" width="37px">Google Traductor</a></span></div></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'es'
+  }, 'google_translate_element');
+}
+</script><script src="closures-en-javascript-entiendelos-de_fitxers/element.js"></script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=visitas" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target="configHTML1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Stats" id="Stats1">
+<h2>Últimos 30 días</h2>
+<div class="widget-content">
+<div id="Stats1_content" style="">
+<img src="closures-en-javascript-entiendelos-de_fitxers/chart.png" alt="Sparkline" id="Stats1_sparkline" height="30" width="75">
+<span class="counter-wrapper text-counter-wrapper" id="Stats1_totalCount">34,684</span>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=Stats&amp;widgetId=Stats1&amp;action=editWidget&amp;sectionId=visitas" onclick='return _WidgetManager._PopupConfig(document.getElementById("Stats1"));' target="configStats1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="bloque" style="margin-top: 10px;">
+<h2>Publicidad</h2>
+<div class="section" id="ads"><div class="widget AdSense" id="AdSense1">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client="pub-7503409589004601";
+google_ad_host="pub-1556223355139109";
+google_ad_width=120;
+google_ad_height=600;
+google_ad_format="120x600_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="C0C0C0";
+google_color_bg="FFFFFF";
+google_color_link="0000FF";
+google_color_url="008000";
+google_color_text="000000";
+//--></script>
+<script type="text/javascript" src="closures-en-javascript-entiendelos-de_fitxers/show_ads.html">
+</script>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=27752126&amp;widgetType=AdSense&amp;widgetId=AdSense1&amp;action=editWidget&amp;sectionId=ads" onclick='return _WidgetManager._PopupConfig(document.getElementById("AdSense1"));' target="configAdSense1" title="Editar">
+<img alt="" src="closures-en-javascript-entiendelos-de_fitxers/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div id="body">
+<a id="contenido" name="contenido"></a>
+<div class="post">
+<!-- ********************************************************************** -->
+<div class="post-body">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<div class="post hentry uncustomized-post-template">
+<a name="2924211610330785303"></a>
+<div class="body">
+<h1 class="titulopost">
+<a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html" rel="bookmark">
+Closures en JavaScript: entiéndelos de una vez por todas</a>
+</h1>
+</div>
+<div class="fecha">
+lunes, 29 de octubre de 2012
+</div>
+<div addthis:title="" addthis:url="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html" class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<div class="post-header-line-1"></div><div class="post-body entry-content">
+<div style="margin: 10x 0 10px 0px"><div class="invitado">
+<div class="datos">
+<h2 class="bloggerinvitado">
+Blogger invitado</h2>
+<a href="http://www.variablenotfound.com/p/formulario-de-contacto.html"><img alt="Blogger invitado" src="closures-en-javascript-entiendelos-de_fitxers/image255B2255D.png" title="image" height="73" border="0" width="73"></a>       <br>
+<h2>
+Óscar Sotorrío Sánchez</h2>
+<h3>
+Desarrollador independiente, MCP C#</h3>
+Eterno aprendiz en esto de las tecnologías .NET y en especial con 
+ASP.NET. Admirador de la filosofía de Internet y entusiasta de los 
+nuevos modelos de negocio que rigen este mundillo. Blog: <a href="http://oscarsotorrio.com/">oscarsotorrio.com</a></div>
+<div style="background-color: #faefa1; border-top-color: black; border-top-style: solid; border-top-width: 1px; color: black; font-size: 75%; padding: 3px; text-align: center;">
+<a alt="¡Contacta conmigo!" href="http://www.variablenotfound.com/p/formulario-de-contacto.html">¿Quieres publicar en VariableNotFound?</a></div>
+</div>
+Los <em>closures</em>, en castellano cierres o clausuras, son una 
+potente característica de JavaScript que también podemos encontrar en 
+otros lenguajes como C#, Objective-C, Eiffel y otros. Este concepto, que
+ tradicionalmente pertenece a la programación funcional, tiene su origen
+ en el lenguaje de programación Scheme.<br>
+<br>
+En este artículo vamos a comenzar por identificar en el código cuándo se
+ producen los closures para luego ver qué tienen de especial. Después 
+pasaremos a ver algunos comportamientos que nos servirán para terminar 
+completamente de entender cómo funcionan. Para finalizar, veremos un par
+ de ejemplos de aplicaciones prácticas.<br>
+<a name="more"></a><br>
+<h3>
+Concepto</h3>
+Cuando nos acercamos por primera vez al concepto de <em>closure</em> es 
+habitual encontrarnos con problemas a la hora de entenderlo, a pesar de 
+que seguramente en muchas ocasiones los habremos utilizado sin saberlo. 
+Por este motivo, antes de intentar dar una definición más o menos 
+académica, creo que es mucho más práctico saber identificar los <em>closures</em> en el código, que al fin y al cabo es el lenguaje natural del programador.<br>
+<br>
+<a href="http://lh5.ggpht.com/-O0SODqrM25I/UI17SuBtWhI/AAAAAAAACYk/1akB8CZ2YZs/s1600-h/image7.png"><img alt="Ejemplo de closure" src="closures-en-javascript-entiendelos-de_fitxers/image_thumb5.png" style="background-image: none; border-width: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;" title="Ejemplo de closure" height="286" border="0" width="697"></a><br>
+<br>
+Identifiquemos los elementos que se producen en el código anterior.<br>
+<ul>
+<li>En primer lugar podemos ver claramente que tenemos dos funciones, y que la función <code>greet()</code> está definida dentro de la función <code>personalizedGreet()</code>.&nbsp; </li>
+<li>En segundo lugar podemos observar como la función <code>greet()</code> utiliza en su cuerpo una variable local perteneciente al ámbito de la función <code>personalizedGreet()</code>. </li>
+</ul>
+Siempre que se produzcan estos dos elementos podemos decir que tenemos un <em>closure</em> entre manos. ¡Así de sencillo! Comprobemos ahora cómo funciona el código que hemos visto en la imagen anterior.<br>
+<div><div id="highlighter_812594" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js comments">//En otra parte del código...</code></div><div class="line number2 index1 alt1"><code class="js keyword">var</code> <code class="js plain">sayHello = personalizedGreet(</code><code class="js string">"Óscar"</code><code class="js plain">);</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">/* Se almacena en la variable sayHello el código: </code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">function greet() { </code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">return hello + name; </code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">}</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">*/</code></div><div class="line number8 index7 alt1"><code class="js plain">alert(sayHello());&nbsp; </code><code class="js comments">// Se ejecuta el código anterior y </code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// se muestra en pantalla: Hello Óscar</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Debemos comentar aquí que la apariencia más habitual de los <em>closures</em> es cuando utilizamos funciones anónimas, como en el siguiente ejemplo:<br>
+<br>
+<div><div id="highlighter_571587" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">whatAreYouWritingAbout()</code></div><div class="line number2 index1 alt1"><code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">subject = </code><code class="js string">"About Closures"</code><code class="js plain">;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">message = </code><code class="js keyword">function</code> <code class="js plain">() { </code><code class="js keyword">return</code> <code class="js plain">subject; };</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">message;</code></div><div class="line number7 index6 alt2"><code class="js plain">}</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="js comments">//En otra parte del código...</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="js keyword">var</code> <code class="js plain">writingAbout = whatAreYouWritingAbout();</code></div><div class="line number13 index12 alt2"><code class="js plain">alert(writingAbout()); </code><code class="js comments">//Muestra en pantalla: About Closures</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Acabamos de ver cómo identificar en el código cuando se producen los <em>closures</em> pero...¿qué tienen de particular?,<strong> ¿qué hace tan especial al código anterior?</strong><br>
+<br>
+Analicemos paso a paso lo que sucede supuestamente cuando se ejecuta la función <code>whatAreYouWritingAbout()</code>:<br>
+<ol>
+<li>Comienza la ejecución de la función <code>whatAreYouWritingAbout()</code>. </li>
+<li>Se guarda en memoria una variable con el valor string <code>"About Closures"</code>. </li>
+<li>Se guarda en memoria una variable con una referencia al código:<br>
+<code>function () { return subject; }</code>. </li>
+<li>La función <code>whatAreYouWritingAbout()</code> devuelve el código anterior. </li>
+<li>Fin de la ejecución de la función <code>whatAreYouWritingAbout()</code>.&nbsp; </li>
+<li>Se llama al <em>Garbage Collector</em> para que elimine la variable <code>subject</code> , dado que la función ha terminado y no la necesitará hasta su próxima ejecución, donde será otra vez definida y asignada. </li>
+</ol>
+Según lo expuesto anteriormente cuando ejecutamos las líneas de código siguientes:<br>
+<br>
+<div><div id="highlighter_186117" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">writingAbout = whatAreYouWritingAbout();</code></div><div class="line number2 index1 alt1"><code class="js plain">alert(writingAbout()); </code><code class="js comments">//Muestra en pantalla: About Closures</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Literalmente es como si estuviéramos escribiendo lo siguiente.<br>
+<br>
+<div><div id="highlighter_361680" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">writingAbout = </code><code class="js keyword">function</code> <code class="js plain">() { </code><code class="js keyword">return</code> <code class="js plain">subject; };</code></div><div class="line number2 index1 alt1"><code class="js plain">alert(writingAbout()); </code><code class="js comments">//Muestra en pantalla: About Closures</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Pero evidentemente, en este contexto o ámbito del código, <strong>la variable subject no existe (o está fuera de ámbito)</strong> y además su valor supuestamente fue destruido al salir de la función <code>whatAreYouWritingAbout()</code>. Por lo tanto, cuando se ejecuta la función <code>writingAbout()</code> debería dar un error tipo <strong><span style="color: red;">Uncaught ReferenceError: subject is not defined</span></strong>. Sin embargo, el código muestra el mensaje correctamente...¿Por qué?.<br>
+<br>
+Cuando JavaScript encuentra en el código un <em>closure</em> le <strong>indica
+ al Garbage Collector que no destruya las variables (están quedan 
+guardadas o encerradas) que la función "interna" necesita para su 
+correcta ejecución</strong>. Por lo tanto, a pesar de que las variables 
+que esta función utiliza se encuentran en otro ámbito en el momento de 
+su ejecución, JavaScript guardó una referencia al valor de las mismas y 
+por lo tanto siempre están accesibles para la función. Podríamos decir 
+que este es el secreto o la magia de los <em>closures</em>.<br>
+<h3>
+Comportamiento</h3>
+Para terminar de captar el concepto veamos ahora una serie de comportamientos o características que tienen los <em>closures</em> y que tendremos que tener siempre presentes cuando trabajamos con esta potente herramienta del lenguaje JavaScript.<br>
+<h4>
+Cómo se crean los closures</h4>
+Cuando el intérprete de JavaScript encuentra un <em>closure</em> guarda 
+las variables locales que las funciones internas van a necesitar. Esto 
+ya lo hemos comentado, pero... ¿cómo acceden las funciones a estas 
+variables? Veamos algunos apuntes sobre esto:<br>
+<br>
+<ul>
+<li>Cuando una variable local se almacena en memoria, si ésta cambia a 
+lo largo de la función externa, en memoria se almacenará el último valor
+ asignado al salir de la función externa. </li>
+<li>Cada función interna guarda una referencia a la posición de memoria donde se almacena la variable, pudiendo acceder a su valor. </li>
+</ul>
+<a href="http://lh6.ggpht.com/-K55aNceyz58/UI17U3WBUnI/AAAAAAAACY0/EwnconsJotI/s1600-h/image11.png"><img alt="Referencias a variables locales" src="closures-en-javascript-entiendelos-de_fitxers/image_thumb7.png" style="background-image: none; border-width: 0px; display: block; float: none; margin: 0px auto 10px; padding-left: 0px; padding-right: 0px; padding-top: 0px;" title="Referencias a variables locales" height="331" border="0" width="491"></a><br>
+La idea principal es que el valor de la variable puede ser modificada a lo largo del código y que <strong>las funciones internas guardan una referencia a la memoria donde se encuentra el último valor de la variable</strong>
+ que fue asignada al salir de la función externa. Es importante tener 
+esto presente y, como veremos ahora, tiene algunos comportamientos que 
+en principio podrían sorprender.<br>
+<h4>
+Definir o modificar la variable después de la función interna</h4>
+En los ejemplos de código que hemos comentado anteriormente la variable 
+local de la función externa se encontraba definida antes que la función 
+anidada. Lo contrario es perfectamente válido.<br>
+<br>
+<div><div id="highlighter_498621" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">personalizedGreet(name)</code></div><div class="line number2 index1 alt1"><code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">greet = </code><code class="js keyword">function</code> <code class="js plain">() { </code><code class="js keyword">return</code> <code class="js plain">hello + name; };</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">hello = </code><code class="js string">"Hello "</code><code class="js plain">;&nbsp; </code><code class="js comments">// Variable local definida después de la función anidada</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">greet;</code></div><div class="line number6 index5 alt1"><code class="js plain">}</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="js comments">//En otra parte del código...</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="js keyword">var</code> <code class="js plain">greeting = personalizedGreet(</code><code class="js string">"Oscar"</code><code class="js plain">);</code></div><div class="line number12 index11 alt1"><code class="js plain">alert(greeting()); </code><code class="js comments">//Muestra en pantalla: Hello Oscar</code></div></div></td></tr></tbody></table></div></div>
+<br>
+<span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12pt; mso-ansi-language: ES; mso-bidi-language: AR-SA; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: ES;">Como podemos observar no tiene ninguna influencia
+cuando es definida la variable local, la función interna guarda una referencia
+a la posición de memoria y utiliza el valor de la variable cuando la necesita.
+El lector puede leer más sobre este efecto y su importancia en el siguiente
+enlace:&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 11.5pt; mso-ansi-language: ES; mso-bidi-language: AR-SA; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: ES;"><a href="http://www.jasoft.org/Blog/post/Elevacion-de-variables-%28hoisting%29-en-JavaScript.aspx"><span style="-webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969);"><span style="color: blue;">http://www.jasoft.org/Blog/post/Elevacion-de-variables-%28hoisting%29-en-JavaScript.aspx</span></span></a></span><br>
+<br>
+Por cierto, en este ejemplo la función interna anónima utiliza realmente dos variables locales, <code>hello</code> y <code>name</code>.
+ Los parámetros de la función externa son considerados lógicamente como 
+variables de este ámbito. Anteriormente se omitió este hecho para 
+simplificar el concepto y explicación.<br>
+<br>
+En el siguiente ejemplo tenemos una función que define en su interior 
+una constante (con valor 10) que será incrementada una cantidad pasada 
+como parámetro a la función:<br>
+<br>
+<div><div id="highlighter_182906" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">constIncrease(amount)</code></div><div class="line number2 index1 alt1"><code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">ten = 10;</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">codeFunc = </code><code class="js keyword">function</code> <code class="js plain">() { alert(ten); };</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ten += amount;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">codeFunc;</code></div><div class="line number7 index6 alt2"><code class="js plain">}</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="js comments">//En otra parte del código...</code></div><div class="line number10 index9 alt1"><code class="js keyword">var</code> <code class="js plain">execute = constIncrease(5);</code></div><div class="line number11 index10 alt2"><code class="js plain">execute();</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Pensad por un momento cual será la salida en pantalla de este código, 10
+ ó 15. Los que hayáis respondido 15 estáis en lo cierto. Los que no, es 
+normal, se tiende a pensar que el <em>closure</em> queda establecido en el comento que se define la función anidada, pero no es así. Como ya hemos comentado, <strong>la función interna simplemente almacena una referencia al último valor de la variable</strong> establecido cuando la función externa termina de ejecutarse.<br>
+<h4>
+Cada llamada es un closure distinto</h4>
+Visto lo anterior podría pensarse que el <em>closure</em> es un elemento
+ global que persiste entre llamadas. No es así, por cada llamada que 
+hagamos a la función externa estaremos creando un nuevo e individual <em>closure</em>. Veamos el ejemplo siguiente.<br>
+<br>
+<div><div id="highlighter_41851" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">personalizedGreet(name) {</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">hello = </code><code class="js string">"Hello "</code><code class="js plain">;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js keyword">function</code> <code class="js plain">() { alert(hello + name); };</code></div><div class="line number6 index5 alt1"><code class="js plain">}</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="js comments">//Creamos dos closures distintos</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="js keyword">var</code> <code class="js plain">greet1 = personalizedGreet(</code><code class="js string">"Pedro"</code><code class="js plain">);</code></div><div class="line number11 index10 alt2"><code class="js keyword">var</code> <code class="js plain">greet2 = personalizedGreet(</code><code class="js string">"María"</code><code class="js plain">);</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="js plain">greet1();&nbsp; </code><code class="js comments">//Muestra en pantalla: Hello Pedro</code></div><div class="line number14 index13 alt1"><code class="js plain">greet2();&nbsp; </code><code class="js comments">//Muestra en pantalla: Hello María</code></div></div></td></tr></tbody></table></div></div>
+<h4>
+Cuando tenemos varias funciones internas</h4>
+Veamos ahora un ejemplo en el que varias funciones internas guardan una 
+referencia a la misma variable local, o podríamos decir también que 
+mantienen una referencia al mismo <em>closure</em>. En este ejemplo la función externa no devuelve ningún objeto, vamos almacenar las funciones internas en variables globales.<br>
+<br>
+<div><div id="highlighter_40669" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">gExecute1 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number2 index1 alt1"><code class="js keyword">var</code> <code class="js plain">gExecute2 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number3 index2 alt2"><code class="js keyword">var</code> <code class="js plain">gExecute3 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="js keyword">function</code> <code class="js plain">createClosure() {</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">num = 10;</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gExecute1 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(num); };</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">num++;</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gExecute2 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(num); };</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">num = </code><code class="js string">"¡¡Toma ya!!!"</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gExecute3 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(num); };</code></div><div class="line number14 index13 alt1"><code class="js plain">}</code></div><div class="line number15 index14 alt2">&nbsp;</div><div class="line number16 index15 alt1"><code class="js plain">createClosure();</code></div><div class="line number17 index16 alt2"><code class="js plain">gExecute1();</code></div><div class="line number18 index17 alt1"><code class="js plain">gExecute2();</code></div><div class="line number19 index18 alt2"><code class="js plain">gExecute3();</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Piense el lector por un momento cuál será la salida de este script. 
+Efectivamente, la salida son tres mensajes seguidos con el texto "¡¡Toma
+ ya!!". Notar que las tres funciones internas mantienen una referencia 
+al mismo valor, es decir, <strong>las tres variables globales pertenecen al mismo <em>closure</em></strong>. De hecho, este podría ser el caso del esquema que&nbsp; hemos visto en la imagen cuando hablábamos de como se crean los <em>closures</em>. Pero compliquemos el código un poco.<br>
+<br>
+<div><div id="highlighter_499605" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">gExecute1 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number2 index1 alt1"><code class="js keyword">var</code> <code class="js plain">gExecute2 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number3 index2 alt2"><code class="js keyword">var</code> <code class="js plain">gExecute3 = </code><code class="js keyword">null</code><code class="js plain">;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="js keyword">function</code> <code class="js plain">createClosure()</code></div><div class="line number6 index5 alt1"><code class="js plain">{</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">num = 10;</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gExecute1 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(num); };</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;</code>&nbsp;</div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gExecute2 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(++num); };</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;</code>&nbsp;</div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">gClosure3 = </code><code class="js keyword">function</code> <code class="js plain">() { alert(num = </code><code class="js string">"¡¡Toma ya!!!"</code><code class="js plain">); };</code></div><div class="line number13 index12 alt2"><code class="js plain">}</code></div><div class="line number14 index13 alt1">&nbsp;</div><div class="line number15 index14 alt2"><code class="js plain">createClosure();</code></div><div class="line number16 index15 alt1"><code class="js plain">gExecute1();&nbsp; </code><code class="js comments">// Ejecuta el código: function () { alert(num); }; </code></div><div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// --&gt; Muestra en pantalla: 10</code></div><div class="line number18 index17 alt1"><code class="js plain">gExecute2();&nbsp; </code><code class="js comments">// Ejecuta el código: function () { alert(++num); }; </code></div><div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// --&gt; Muestra en pantalla: 11</code></div><div class="line number20 index19 alt1"><code class="js plain">gExecute3();&nbsp; </code><code class="js comments">// Ejecuta el código: function () { alert(num = "¡¡Toma ya!!!"); }; </code></div><div class="line number21 index20 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// --&gt; Muestra en pantalla: ¡¡Toma ya!!!</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="js comments">//¿Qué mostrará ahora la siguiente linea de código...?</code></div><div class="line number24 index23 alt1"><code class="js plain">gExecute1();</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Si volvemos a ejecutar el código de la función <code>gExecute1()</code> obtenemos el mensaje "¡¡Toma ya!!". Esto es totalmente lógico porque esta función tiene una referencia al mismo <em>closure</em> que <code>gExecute3()</code> que fue la última función en modificar el <em>closure</em> que comparten.<br>
+<h4>
+Toda variable puede pertenecer al closure</h4>
+Debemos tener en cuenta que <strong>todo tipo de variable que se declare
+ dentro del ámbito de la función externa y sea utilizada por la función 
+anidada pertenecerá al <em>closure</em></strong>. Esto puede dar algunos resultados inesperados por creación de <em>closures</em>
+ no previstos. Por ejemplo, cuando ejecutamos bucles debemos prestar 
+atención si dentro de la función interna utilizamos la variable contador
+ del bucle: ésta es a todos los efectos una variable local de la función
+ externa y por lo tanto pertenecerá al <em>closure</em>.<br>
+<br>
+<div><div id="highlighter_511898" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">testLoop(length)</code></div><div class="line number2 index1 alt1"><code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">list = </code><code class="js keyword">new</code> <code class="js plain">Array();</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">for</code> <code class="js plain">(</code><code class="js keyword">var</code> <code class="js plain">i = 0; i &lt;= length; i++) {</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">list[i] = </code><code class="js string">"Item"</code> <code class="js plain">+ i;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js keyword">function</code> <code class="js plain">() {</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"i = "</code> <code class="js plain">+ i</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">+ </code><code class="js string">"\n"</code> <code class="js plain">+</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"list["</code> <code class="js plain">+ i + </code><code class="js string">"] = "</code> <code class="js plain">+ list[i]);</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number13 index12 alt2"><code class="js plain">}</code></div><div class="line number14 index13 alt1">&nbsp;</div><div class="line number15 index14 alt2"><code class="js keyword">var</code> <code class="js plain">execute = testLoop(5);</code></div><div class="line number16 index15 alt1"><code class="js plain">execute();</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="js comments">/*</code></div><div class="line number19 index18 alt2"><code class="js comments">---Salida del programa---</code></div><div class="line number20 index19 alt1">&nbsp;</div><div class="line number21 index20 alt2"><code class="js spaces">&nbsp;</code><code class="js comments">i = 6;</code></div><div class="line number22 index21 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js comments">list[6] = undefined</code></div><div class="line number23 index22 alt2">&nbsp;</div><div class="line number24 index23 alt1"><code class="js comments">*/</code></div></div></td></tr></tbody></table></div></div>
+<br>
+Como podemos observar el contador también pertenece al <em>closure</em> y
+ está disponible para la función interna fuera del ámbito de la función 
+externa. Además, y aquí es cuando tenemos que tener cuidado, el último 
+valor para esta variable es 6 porque el bucle ejecuta una vez más la 
+instrucción <code>i++</code> para luego realizar la comprobación <code>i &lt;= length</code> y salir del mismo.<br>
+<h3>
+Aplicaciones prácticas</h3>
+Ahora que seguramente que ya hemos entendido cómo se comportan los <em>closures</em>,
+ pasemos a algo más práctico. En seguida vamos a ver algunos ejemplos 
+donde podemos comprobar en el campo de batalla la potencia de esta 
+característica del lenguaje. Tenga el lector en cuenta que aplicaciones 
+sobre este concepto pueden haber tantas como las necesidades o 
+imaginación de los programadores, aquí veremos solo algunas.<br>
+<h4>
+Ejecutar funciones retardadas</h4>
+Quizás este sea el ejemplo práctico más clásico y que el lector 
+seguramente ya conocerá. En ocasiones en nuestro código JavaScript 
+podemos necesitar realizar operaciones con retardo, para ello JavaScript
+ nos provee de las funciones <code>setTimeout()</code> y <code>setInterval()</code>.<br>
+<br>
+Normalmente llamaremos a estas funciones pasándole como parámetros el 
+nombre de la función a ejecutar y el tiempo de retardo en milisegundos. 
+El problema a resolver es que sucede si la función que queremos ejecutar
+ con retardo toma uno o más parámetros. En principio no tenemos forma de
+ pasarle los parámetros a nuestra función dado que <code>setTimeout()</code> y <code>setInterval()</code> sólo admiten el nombre de la función como primer parámetro. Esto es fácil de resolver con un <em>closure</em>.<br>
+<br>
+<div><div id="highlighter_632940" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">additionNumber(a, b)</code></div><div class="line number2 index1 alt1"><code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js keyword">function</code> <code class="js plain">() { </code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(a + </code><code class="js string">" + "</code> <code class="js plain">+ b + </code><code class="js string">" = "</code> <code class="js plain">+ (a + b)); </code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number6 index5 alt1"><code class="js plain">}</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="js keyword">var</code> <code class="js plain">execute = additionNumber(10, 40);</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="js plain">setTimeout(execute, 3000);&nbsp; </code><code class="js comments">//Después de 3 segundos se muestra </code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// en pantalla: 10 + 40 = 50</code></div></div></td></tr></tbody></table></div></div>
+<h4>
+Acceso desde miembros privados a miembros públicos</h4>
+En un artículo anterior cuando hablamos de las <a href="http://www.variablenotfound.com/2011/12/funciones-constructoras-en-javascript.html">funciones constructoras</a>
+ comentamos que desde los métodos privados no podíamos tener acceso a 
+las propiedades públicas del objeto creado. Retomando el ejemplo de 
+código que vimos en aquel artículo veamos cómo saltarnos este pequeño 
+escollo:<br>
+<br>
+<div><div id="highlighter_942750" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">Constructor(msjPrivado, msjPublico) {</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">propiedadPrivada = msjPrivado;</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">.propiedadPublica = msjPublico;</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">that = </code><code class="js keyword">this</code><code class="js plain">; </code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">/*</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">La variable 'that' será guardada en el closure para ser </code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">utilizada en su momento por la función metodoPrivado()</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">*/</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">metodoPrivado = </code><code class="js keyword">function</code> <code class="js plain">() {</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(propiedadPrivada);</code></div><div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(that.propiedadPublica);</code></div><div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number16 index15 alt1">&nbsp;</div><div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">.metodoPublico = </code><code class="js keyword">function</code> <code class="js plain">() {</code></div><div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">metodoPrivado();</code></div><div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number20 index19 alt1"><code class="js plain">}</code></div><div class="line number21 index20 alt2">&nbsp;</div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="js keyword">var</code> <code class="js plain">obj = </code><code class="js keyword">new</code> <code class="js plain">Constructor(</code><code class="js string">"mensaje privado"</code><code class="js plain">, </code><code class="js string">"mensaje público"</code><code class="js plain">);</code></div><div class="line number24 index23 alt1"><code class="js plain">obj.metodoPublico(); </code></div><div class="line number25 index24 alt2">&nbsp;</div><div class="line number26 index25 alt1"><code class="js spaces">&nbsp;</code><code class="js comments">/*</code></div><div class="line number27 index26 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">Muestra en pantalla dos mensajes seguidos:</code></div><div class="line number28 index27 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">mensaje privado</code></div><div class="line number29 index28 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">mensaje público</code></div><div class="line number30 index29 alt1"><code class="js comments">*/</code></div></div></td></tr></tbody></table></div></div>
+<h4>
+Personalizar eventos para objetos determinados del DOM</h4>
+Supongamos que queremos encapsular en objetos del DOM la típica 
+funcionalidad para que cuando el ratón se posicione sobre un elemento 
+HTML éste cambie el texto de color y el estilo del puntero, mientras que
+ cuando el ratón abandone el elemento, el texto y puntero vuelven a su 
+estado anterior.<br>
+<br>
+<div><div id="highlighter_599624" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js comments">//Asocia un objeto a un evento personalizado</code></div><div class="line number2 index1 alt1"><code class="js keyword">function</code> <code class="js plain">funcDelegate(obj, methodName) {</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// {1}</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js keyword">function</code> <code class="js plain">(e) {</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">e = e || window.event;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">obj[methodName](</code><code class="js keyword">this</code><code class="js plain">, e); </code><code class="js comments">// {2}</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number8 index7 alt1"><code class="js plain">}</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="js comments">//Crea un objeto y enlaza los eventos del DOM con los eventos personalizados</code></div><div class="line number11 index10 alt2"><code class="js keyword">function</code> <code class="js plain">DOMObject(id) {</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">._element = document.getElementById(id);</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(</code><code class="js keyword">this</code><code class="js plain">._element) {</code></div><div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">// {3}</code></div><div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">._element.onmouseover = funcDelegate(</code><code class="js keyword">this</code><code class="js plain">, </code><code class="js string">"customOnMouseOver"</code><code class="js plain">); </code><code class="js comments">// {4}</code></div><div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">._element.onmouseout = funcDelegate(</code><code class="js keyword">this</code><code class="js plain">, </code><code class="js string">"customOnMouseOut"</code><code class="js plain">);</code></div><div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number19 index18 alt2"><code class="js plain">}</code></div><div class="line number20 index19 alt1">&nbsp;</div><div class="line number21 index20 alt2"><code class="js comments">//Definimos el código de nuestros eventos personalizados</code></div><div class="line number22 index21 alt1"><code class="js plain">DOMObject.prototype.customOnMouseOver = </code><code class="js keyword">function</code> <code class="js plain">(obj, event) {</code></div><div class="line number23 index22 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">obj.style.cursor = </code><code class="js string">"pointer"</code><code class="js plain">;</code></div><div class="line number24 index23 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">obj.style.color = </code><code class="js string">"red"</code><code class="js plain">;</code></div><div class="line number25 index24 alt2"><code class="js plain">};</code></div><div class="line number26 index25 alt1">&nbsp;</div><div class="line number27 index26 alt2"><code class="js plain">DOMObject.prototype.customOnMouseOut = </code><code class="js keyword">function</code> <code class="js plain">(obj, event) {</code></div><div class="line number28 index27 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">obj.style.cursor = </code><code class="js string">"pointer"</code><code class="js plain">;</code></div><div class="line number29 index28 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">obj.style.color = </code><code class="js string">"black"</code><code class="js plain">;</code></div><div class="line number30 index29 alt1"><code class="js plain">};</code></div><div class="line number31 index30 alt2">&nbsp;</div><div class="line number32 index31 alt1"><code class="js comments">//Ahora podemos activar todo este mecanismo para distintos elementos de nuestra página</code></div><div class="line number33 index32 alt2"><code class="js keyword">var</code> <code class="js plain">myDiv = </code><code class="js keyword">new</code> <code class="js plain">DOMObject(</code><code class="js string">"aDiv"</code><code class="js plain">);</code></div><div class="line number34 index33 alt1"><code class="js keyword">var</code> <code class="js plain">myButton = </code><code class="js keyword">new</code> <code class="js plain">DOMObject(</code><code class="js string">"aButton"</code><code class="js plain">);</code></div></div></td></tr></tbody></table></div></div>
+<br>
+<ol>
+<li>Aquí es donde se produce el <em>closure</em>. Como se puede apreciar
+ la función interna guardará una referencia a un objeto pasado como 
+parámetro y al nombre de una función que en este caso será el nombre de 
+nuestro evento personalizado. Nótese una vez más, <strong>aquí simplemente se está creando el <em>closure</em> y devolviendo un código</strong>, que será ejecutado más tarde, parecido a: <code>objeto.eventoPersonalizado(elementoHTML, eventoDOM)</code>
+ . Aunque este código se ejecute después, la función seguirá teniendo 
+acceso al objeto y al valor de la cadena que representa el nombre del 
+evento.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</li>
+<li>Aunque la palabra reservada <code>this</code> pueda parecer que se utiliza aquí, recordemos que en este momento sólo se crea el <em>closure</em>
+ y se devuelve un código que será ejecutado a posteriori. En el momento 
+de ejecutarte este código, cuando un evento del DOM se dispare (ej: 
+onclick), <strong><code><strong>this</strong></code> hará referencia al elemento HTML que dispara el evento del DOM</strong>.<br>
+<br>
+</li>
+<li>En este momento asignamos a los eventos del DOM que nos interese el código devuelto por <code>funcDelegate</code>. Lo hemos mencionado antes, este código será del estilo: <code>objeto.eventoPersonalizado(elementoHTML, eventoDOM)</code>. Por lo tanto, <strong>cuando
+ se dispare un evento del DOM, como el onclick, estaremos llamando a una
+ función que hace las veces de nuestro evento personalizado</strong>.<br>
+&nbsp;&nbsp; </li>
+<li>Aquí <code>this</code> hace referencia al objeto creado con la función constructora <code>DOMObject(id)</code>. </li>
+</ol>
+Seguramente el lector conozca otras formas más sencillas por medio de 
+llamadas sucesivas a funciones de implementar el mismo comportamiento. 
+La ventaja de hacerlo de esta forma es que estamos encapsulando la 
+funcionalidad con los propios objetos del DOM, lo que nos proporciona 
+más robustez y mantenibilidad del código y además nos permite disparar 
+los eventos personalizados cuando lo necesitemos:<br>
+<br>
+<div><div id="highlighter_958319" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">myDiv = </code><code class="js keyword">new</code> <code class="js plain">DOMObject(</code><code class="js string">"aDiv"</code><code class="js plain">);</code></div><div class="line number2 index1 alt1"><code class="js plain">myDiv.customOnClick(myDiv._element, </code><code class="js keyword">null</code><code class="js plain">);</code></div></div></td></tr></tbody></table></div></div>
+<h3>
+Referencias</h3>
+<ul>
+<li> Muy recomendable es la lectura del libro "<a href="http://www.campusmvp.com/catalogo/Product-Fundamentos-de-JavaScript-y-AJAX-para-desarrolladores-y-dise%C3%B1adores-web_159.aspx">Fundamentos de JavaScript y AJAX para desarrolladores y diseñadores web</a>",&nbsp;en
+ el que se puede encontrar una inteligente técnica para encapsular 
+miembros de objetos por medio de closures además de ser un completísimo 
+tratado sobre JavaScript.&nbsp; </li>
+<li>Si el lector quiere profundizar más sobre este concepto le recomiendo el siguiente enlace:&nbsp; <a href="http://dmitrysoshnikov.com/ecmascript/chapter-6-closures/">http://dmitrysoshnikov.com/ecmascript/chapter-6-closures/</a>&nbsp;</li>
+<li>Al final del siguiente enlace se utiliza un patrón por medio de 
+closures para implementar propiedades privadas, públicas y con 
+privilegios en objetos JavaScript:&nbsp; <a href="http://www.crockford.com/javascript/private.html">http://www.crockford.com/javascript/private.html</a> </li>
+</ul>
+<br>
+Autor: Óscar Sotorrío Sánchez <br>
+Publicado en <a href="http://www.variablenotfound.com/">Variable not found</a>
+</div>
+<div style="clear: both; height: 15px; margin: 0; padding: 0;"></div>
+<div addthis:title="" addthis:url="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html" class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<p class="licencia">Estos contenidos se publican bajo una <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" rel="license" title="Licencia Reconocimiento-No comercial-Compartir bajo la misma licencia 3.0 España de Creative Commons">licencia de Creative Commons</a>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" rel="license" title="Licencia Reconocimiento-No comercial-Compartir bajo la misma licencia 3.0 España de Creative Commons"><img alt="Licencia Reconocimiento-No comercial-Compartir bajo la misma licencia 3.0 España de Creative Commons" src="closures-en-javascript-entiendelos-de_fitxers/80x15.png" style="border-width:0"></a></p>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<p class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+<span class="fn">Publicado por
+                                                        José M. Aguilar</span>
+</span><span class="post-timestamp">
+
+                                                    a las 
+                                                    
+<abbr class="published" title="2012-10-29T09:10:00+01:00">
+9:10 a.m.</abbr>
+</span>
+</p><div class="post-comment-link">
+</div>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-443907566"><a href="http://www.blogger.com/post-edit.g?blogID=27752126&amp;postID=2924211610330785303&amp;from=pencil" title="Editar entrada"><span class="quick-edit-icon">&nbsp;</span>
+</a>
+</span>
+</span>
+<p></p>
+<p class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+
+                                                    Etiquetas: 
+                                                    
+<a href="http://www.variablenotfound.com/search/label/colaboraciones" rel="tag">
+colaboraciones</a>,
+<a href="http://www.variablenotfound.com/search/label/javascript" rel="tag">
+javascript</a>,
+<a href="http://www.variablenotfound.com/search/label/oscarsotorrio" rel="tag">
+oscarsotorrio</a>
+</span>
+</p>
+<p class="post-footer-line post-footer-line-3"></p>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>
+5 Comentarios:
+                                                    
+</h4>
+<dl id="comments-block">
+<dt class="comment-author" id="c8000651938249374251"><a name="c8000651938249374251"></a>
+<a href="http://www.blogger.com/profile/07959547392771610349" rel="nofollow">
+Sergio León</a>
+dijo...
+</dt>
+<dd class="comment-body">
+<p>
+Oscar, super-post!<br>Muy bien explicado y además se nota que te lo has preparado a conciencia.<br>Jose tiene que estar orgulloso de tan ilustre colaboración ;-)</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp"><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?showComment=1351588623706#c8000651938249374251" title="comment permalink">
+martes, 30 octubre, 2012
+</a>
+<span class="item-control blog-admin pid-690161865"><a href="http://www.blogger.com/delete-comment.g?blogID=27752126&amp;postID=8000651938249374251" title="Suprimir comentario"><span class="delete-comment-icon">&nbsp;</span>
+</a></span>
+</span>
+</dd>
+<dt class="comment-author" id="c3108244474857231781"><a name="c3108244474857231781"></a>
+<a href="http://oscarsotorrio.com/" rel="nofollow">
+Oscar.SS</a>
+dijo...
+</dt>
+<dd class="comment-body">
+<p>
+Muchas gracias Sergio,<br><br>La verdad es que estás cosas efectivamente llevan su tiempo ;-)<br><br>Y
+ José María también se lleva lo suyo por email debatiendo conmigo cual 
+debe puede ser el enfoque más pedagógico y muchas otras cosas. Así que 
+el que está orgulloso soy yo de colaborar con él. Siempre aprendo algo 
+:-)</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp"><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?showComment=1351591290141#c3108244474857231781" title="comment permalink">
+martes, 30 octubre, 2012
+</a>
+<span class="item-control blog-admin pid-180938159"><a href="http://www.blogger.com/delete-comment.g?blogID=27752126&amp;postID=3108244474857231781" title="Suprimir comentario"><span class="delete-comment-icon">&nbsp;</span>
+</a></span>
+</span>
+</dd>
+<dt class="comment-author" id="c7459777410838436987"><a name="c7459777410838436987"></a>
+<a href="http://www.blogger.com/profile/07959547392771610349" rel="nofollow">
+Sergio León</a>
+dijo...
+</dt>
+<dd class="comment-body">
+<p>
+Hola Oscar:<br>Unas preguntas al respecto de tu artículo:<br>1. Yo digo 
+que he hecho un "closure" sólo cuando la función externa ha finalizado 
+su ejecución pero la función interna tiene que seguir teniendo acceso a 
+variables de un ámbito superior. Es decir, sólo por utilizar una 
+variable de un ámbito superior yo, personalmente, no hablo de "closure".
+ Para mí tiene que haber vida de una función interna más allá de la vida
+ de una función externa y con acceso a variables de un ámbito superior. 
+Uff, espero haberme explicado. Sé que es un matiz muy tonto, pero ¿tú 
+que opinas?<br>2. Lo cierto es que el garbage collector de JS... ahí 
+está, tampoco he hecho ninguna aplicación con memory leaks "aparentes" 
+pero me surge la duda ¿el garbage collector de JS es similar al de .NET?
+ Es decir, cuando no haya referencias a la función interna desde fuera 
+¿se liberará entonces el closure?<br>Un saludo.</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp"><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?showComment=1351596620623#c7459777410838436987" title="comment permalink">
+martes, 30 octubre, 2012
+</a>
+<span class="item-control blog-admin pid-690161865"><a href="http://www.blogger.com/delete-comment.g?blogID=27752126&amp;postID=7459777410838436987" title="Suprimir comentario"><span class="delete-comment-icon">&nbsp;</span>
+</a></span>
+</span>
+</dd>
+<dt class="comment-author" id="c4552349885516432721"><a name="c4552349885516432721"></a>
+<a href="http://oscarsotorrio.com/" rel="nofollow">
+Oscar.SS</a>
+dijo...
+</dt>
+<dd class="comment-body">
+<p>
+Hola Sergio,<br><br>1- No sé si te he entendido bien. Pero si te das cuenta apuntas dos elementos para que haya un closure.<br><br>"...tiene
+ que haber vida de una función interna más allá de la vida de una 
+función externa" y "con acceso a variables de un ámbito superior".<br><br>Al
+ final, creo que es lo mismo que se ha comentado en el artículo pero 
+dicho de otra forma. Es decir, formas de expresarlo puede haber muchas y
+ seguro que mejores que la que se utiliza en el artículo, de hecho, como
+ se comenta en el post, no se pretende dar una definición académica, 
+solo que se entienda el concepto.<br><br>Aquí tienes otra forma de verlo hablando del verdadero ámbito de las variables.<br><br>http://www.jasoft.org/Blog/post/PermaLinkaspxguid=559517d8-9579-41bd-9e2c-36569dc.aspx<br><br>2- Buena pregunta :-)<br><br>Hasta
+ donde yo llego en JavaScript la memoria se asigna a los objetos en su 
+creación y es reclamado por el navegador cuando no hay más referencias a
+ los mismos.<br><br>Aunque creo que depende un poco del explorador, por 
+ejemplo, en Internet Explorer y Mozilla Firefox se utiliza el recuento 
+de referencias para manejar la memoria de los objetos DOM.<br><br>Creo 
+que la pregunta es buena y habría que ver como se relaciona todo esto 
+con los closures. No me ha dado tiempo a leerlo pero parece interesante 
+este artículo.<br><br>http://www.ibm.com/developerworks/web/library/wa-memleak/<br><br>Un saludo<br><br></p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp"><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?showComment=1351601403474#c4552349885516432721" title="comment permalink">
+martes, 30 octubre, 2012
+</a>
+<span class="item-control blog-admin pid-180938159"><a href="http://www.blogger.com/delete-comment.g?blogID=27752126&amp;postID=4552349885516432721" title="Suprimir comentario"><span class="delete-comment-icon">&nbsp;</span>
+</a></span>
+</span>
+</dd>
+<dt class="comment-author" id="c8852061082104019076"><a name="c8852061082104019076"></a>
+<a href="http://www.blogger.com/profile/07959547392771610349" rel="nofollow">
+Sergio León</a>
+dijo...
+</dt>
+<dd class="comment-body">
+<p>
+Gracias por responder, Oscar.<br>Voy a leer los enlaces porque parecen 
+interesante. Respecto a los closures estamos en línea, al final son 
+definiciones similares. Y en cuanto a los memory-leak pues... a leer 
+toca! ;-)<br></p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp"><a href="http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html?showComment=1351605727046#c8852061082104019076" title="comment permalink">
+martes, 30 octubre, 2012
+</a>
+<span class="item-control blog-admin pid-690161865"><a href="http://www.blogger.com/delete-comment.g?blogID=27752126&amp;postID=8852061082104019076" title="Suprimir comentario"><span class="delete-comment-icon">&nbsp;</span>
+</a></span>
+</span>
+</dd>
+</dl>
+<p class="comment-footer">
+<a href="http://www.blogger.com/comment.g?blogID=27752126&amp;postID=2924211610330785303" onclick="">Enviar
+                                                un nuevo comentario</a>
+</p>
+<div id="backlinks-container">
+<h4>
+                                            Backlinks:</h4>
+<div id="Blog1_backlinks-container"><a name="links"></a>
+<h4>
+</h4>
+<p class="comment-footer">
+<a class="comment-link" href="http://www.blogger.com/blog-this.g" id="Blog1_backlinks-create-link" target="_blank">¡Bloguea sobre este tema!</a>
+</p>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+<script type="text/javascript"><!--
+google_ad_client="pub-7503409589004601";
+google_ad_host="pub-1556223355139109";
+google_ad_width=468;
+google_ad_height=60;
+google_ad_format="468x60_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="FFFFFF";
+google_color_bg="FFFFFF";
+google_color_link="000000";
+google_color_url="000040";
+google_color_text="202020";
+//--></script>
+<script type="text/javascript" src="closures-en-javascript-entiendelos-de_fitxers/show_ads.html">
+</script>
+<!-- google_ad_section_start -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link"><a class="blog-pager-newer-link" href="http://www.variablenotfound.com/2012/11/errores-de-aspnet-mvc-4-en-distintos.html" id="Blog1_blog-pager-newer-link" title="Entrada más reciente">
+Entrada más reciente</a>
+</span>
+<span id="blog-pager-older-link"><a class="blog-pager-older-link" href="http://www.variablenotfound.com/2012/10/enlaces-interesantes-99.html" id="Blog1_blog-pager-older-link" title="Entrada antigua">
+Entrada antigua</a>
+</span>
+<a class="home-link" href="http://www.variablenotfound.com/">
+Página principal</a>
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+<!-- ********************************************************************** -->
+</div>
+</div>
+<div id="footer">
+        Variable not found, 2006-2012 :: Usando Blogger :: Todos los contenidos son Creative Commons 
+    </div>
+</div>
+<script charset="utf-8" src="closures-en-javascript-entiendelos-de_fitxers/vnf.js" type="text/javascript"></script>
+<script src="closures-en-javascript-entiendelos-de_fitxers/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+   (function() {
+   var mh = $("#nav").height() - $(".header").height();
+   var bh = $("#body").height();
+   if(bh < mh)
+	  $("#body").css("height", mh);
+   })();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="closures-en-javascript-entiendelos-de_fitxers/2167839501-widgets.js"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '27752126';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d27752126','//www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html','27752126');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '27752126', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Variable not found', 'pageType': 'item', 'url': 'http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html', 'canonicalUrl': 'http://www.variablenotfound.com/2012/10/closures-en-javascript-entiendelos-de.html', 'canonicalHomepageUrl': 'http://www.variablenotfound.com/', 'homepageUrl': 'http://www.variablenotfound.com/', 'blogspotFaviconUrl': 'http://www.variablenotfound.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Closures en JavaScript: entiéndelos de una vez por todas', 'pageTitle': 'Variable not found: Closures en JavaScript: entiéndelos de una vez por todas', 'encoding': 'UTF-8', 'locale': 'es-ES', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Variable not found - Atom\42 href\75\42http://www.variablenotfound.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Variable not found - RSS\42 href\75\42http://www.variablenotfound.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Variable not found - Atom\42 href\75\42http://www.blogger.com/feeds/27752126/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07527752126\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Variable not found - Atom\42 href\75\42http://www.variablenotfound.com/feeds/2924211610330785303/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://lh6.ggpht.com/-4HyIjIhR_2c/TomfdXCPZoI/AAAAAAAABoI/qI5chbQKIl0/s72-c/image%25255B2%25255D.png?imgmax\75800', 'imageSrcTag': '\74link rel\75\42image_src\42 href\75\42http://lh6.ggpht.com/-4HyIjIhR_2c/TomfdXCPZoI/AAAAAAAABoI/qI5chbQKIl0/s72-c/image%25255B2%25255D.png?imgmax\75800\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window,b\75\42jstiming\42,d\75\42tick\42;var e\75function(c){this.t\75{};this.tick\75function(c,p,h){h\75void 0!\75h?h:(new Date).getTime();this.t[c]\75[h,p]};this[d](\42start\42,null,c)},f\75new e;a.jstiming\75{Timer:e,load:f};if(a.performance\46\46a.performance.timing){var g\75a.performance.timing,j\75a[b].load,k\75g.navigationStart,l\75g.responseStart;0\74k\46\46l\76\75k\46\46(j[d](\42_wtsrt\42,void 0,k),j[d](\42wtsrt_\42,\42_wtsrt\42,l),j[d](\42tbsd_\42,\42wtsrt_\42))}\ntry{var m\75null;a.chrome\46\46a.chrome.csi\46\46(m\75Math.floor(a.chrome.csi().pageT),j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.chrome.csi().startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));null\75\75m\46\46a.gtbExternal\46\46(m\75a.gtbExternal.pageT());null\75\75m\46\46a.external\46\46(m\75a.external.pageT,j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.external.startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));m\46\46(a[b].pt\75m)}catch(n){};a.tickAboveFold\75function(c){var i\0750;if(c.offsetParent){do i+\75c.offsetTop;while(c\75c.offsetParent)}c\75i;750\76\75c\46\46a[b].load[d](\42aft\42)};var q\75!1;function r(){q||(q\75!0,a[b].load[d](\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,r,!1):a.attachEvent(\42onscroll\42,r);\n })();\74/script\076', 'mobileHeadScript': '', 'adsenseClientId': 'pub-7503409589004601', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/20497177ec370ede'}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'navbarelement2', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'navbarelement2', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'ads', null, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'visitas', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'visitas', null, document.getElementById('Stats1'), {'title': 'Últimos 30 días', 'showGraphicalCounter': false, 'showAnimatedCounter': true, 'showSparkline': true, 'statsUrl': '//www.variablenotfound.com/b/stats?style\75BLACK_TRANSPARENT\46timeRange\75LAST_MONTH\46token\75V3ilQjsBAAA.CTFDgdx5NpFvNi7owYp6Zg.x_pranRRC-va1DmNgad5vQ'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'navelement1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '2924211610330785303', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/157152712-lbx_es.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'Páginas', 'links': [{'href': 'http://www.variablenotfound.com/', 'title': 'Página principal', 'isCurrentPage': false}, {'href': 'http://www.variablenotfound.com/p/formulario-de-contacto.html', 'title': 'Formulario de contacto', 'isCurrentPage': false}, {'href': 'http://www.variablenotfound.com/p/el-autor.html', 'title': 'El autor', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="closures-en-javascript-entiendelos-de_fitxers/translate-32.png" height="20" width="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Text original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribuïu a millorar la traducció</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div style="display: none;" class="status-message"></div></div>
+
+<div style="position: absolute; top: -1000px; height: 1px; width: 1px;"><object id="fI0ha0r1oso" name="fI0ha0r1oso" type="application/x-shockwave-flash" data="closures-en-javascript-entiendelos-de_fitxers/hrs.swf" height="500" width="400"><param name="allowScriptAccess" value="always"></object></div></body></html>
