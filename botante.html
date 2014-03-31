@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+var empiezo_bajar = true;
+var tempsubir;
+function mover(){
+	if (empiezo_bajar == true){
+		if (tope < 80){
+			document.getElementById("botante").style.top = tope + "%";
+			tope = tope +1;
+		}
+		else{
+			empiezo_bajar = false;
+		}
+	}
+	else{
+		if (tope > 1){
+			document.getElementById("botante").style.top = tope + "%";
+			tope = tope - 1;
+		}
+ 		else{
+			empiezo_bajar = true;                   
+		}U
+	}
+	//clearTimeout(tempsubir);
+	//tempsubir=setTimeout(mover(),100);
+}
+
+</script>
+
+ 
+</head>
+
+<body>
+<div id="botante" style="width:15%; height:20%; background-color: red; position:absolute; left:20%; top:1%;">Arriba y abajo </div>
+<script type="text/javascript">
+	var tope= parseInt(document.getElementById("botante").style.top);
+	tope = parseInt(tope);
+	//tempsubir=setTimeout(mover(),1000);
+	setInterval("mover()",100);
+</script>
+
+
+
+</body>
+</html>
